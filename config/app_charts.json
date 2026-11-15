@@ -1,7 +1,10 @@
 {
   "country": "th",
   "chart": "topfreeapplications",
-  "limit": 50,
+  "new_chart": "newfreeapplications",
+  "limit": 100,
+  "new_limit": 100,
+  "new_app_max_days": 60,
   "genres": [
     { "name": "ทั้งหมด", "id": null },
     { "name": "เกม", "id": 6014 },
