@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แอปใหม่มาแรง</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <h1>แอปใหม่มาแรง</h1>
+  <nav>
+    <a href="index.html">Google Trends</a> |
+    <a href="apps.html">App Charts</a> |
+    <a href="new.html">แอปใหม่</a>
+  </nav>
+  <p id="status">กำลังโหลดข้อมูล...</p>
+
+  <div style="margin: 16px 0;">
+    <label for="genre">หมวด: </label>
+    <select id="genre"><option value="all">ทั้งหมด</option></select>
+    <label for="days" style="margin-left: 16px;">ออกมาไม่เกิน: </label>
+    <select id="days">
+      <option value="7">7 วัน</option>
+      <option value="30">30 วัน</option>
+      <option value="60" selected>60 วัน</option>
+    </select>
+  </div>
+
+  <table style="width: 100%;">
+    <thead>
+      <tr>
+        <th style="text-align: left;">ชื่อแอป</th>
+        <th style="text-align: left;">หมวด</th>
+        <th style="text-align: right;">อายุ (วัน)</th>
+        <th style="text-align: right;">รีวิว</th>
+        <th style="text-align: right;">เพิ่มขึ้นจากวันก่อน</th>
+        <th style="text-align: right;">ชาร์ตขายดี</th>
+      </tr>
+    </thead>
+    <tbody id="apps"></tbody>
+  </table>
+
+  <script src="assets/new.js"></script>
+</body>
+</html>
