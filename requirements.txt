@@ -1,0 +1,4 @@
+# Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned 
+
+pytrends==4.9.2
+

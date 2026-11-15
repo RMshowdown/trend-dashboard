@@ -1,0 +1,18 @@
+{
+  "geo": "TH",
+  "timeframe": "today 3-m",
+  "groups": [
+    {
+      "name": "AI",
+      "keywords": ["ChatGPT", "Claude", "Gemini"]
+    },
+    {
+      "name": "Social",
+      "keywords": ["TikTok", "Threads", "Instagram"]
+    },
+    {
+      "name": "Tools",
+      "keywords": ["Figma", "Notion", "Canva"]
+    }
+  ]
+}
