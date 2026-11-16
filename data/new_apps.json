@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T03:54:45+00:00",
+  "updated_at": "2026-11-16T04:15:04+00:00",
   "country": "th",
   "max_days": 60,
   "charts": [
@@ -91,7 +91,7 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6014": 23
+          "6014": 27
         },
         "topgrossing": {
           "all": 31,
@@ -195,11 +195,11 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "all": 68,
-          "6015": 8
+          "all": 73,
+          "6015": 9
         }
       },
-      "score": 99.7,
+      "score": 99.1,
       "history": {
         "2026-11-16": 1757
       }
@@ -228,13 +228,13 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6014": 24
+          "6014": 25
         },
         "topgrossing": {
           "6014": 36
         }
       },
-      "score": 95.0,
+      "score": 94.4,
       "history": {
         "2026-11-16": 3743
       }
@@ -263,7 +263,7 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6014": 43
+          "6014": 42
         },
         "topgrossing": {
           "6014": 40
@@ -272,6 +272,38 @@
       "score": 89.2,
       "history": {
         "2026-11-16": 6736
+      }
+    },
+    {
+      "id": "6812260269",
+      "name": "เงินอุ่นใจ-เครดิตดี เชื่อได้",
+      "developer": "SMART PICO COMPANY LIMITED",
+      "genre": "Finance",
+      "url": "https://apps.apple.com/th/app/%E0%B9%80%E0%B8%87-%E0%B8%99%E0%B8%AD-%E0%B8%99%E0%B9%83%E0%B8%88-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%94-%E0%B8%95%E0%B8%94-%E0%B9%80%E0%B8%8A-%E0%B8%AD%E0%B9%84%E0%B8%94/id6812260269?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6f/dd/2c/6fdd2c89-ea81-7afd-d396-3087a3d91dd9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "เกี่ยวกับแอปนี้ เราอยู่ภายใต้การกำกับดูแลอย่างเข้มงวดของสำนักงานนโยบายและแผนการคลัง (FPO) กระทรวงการคลังแห่งประเทศไทย และดำเนินงานภายใต้การอนุญาตของ บริษัท สมาร์ท พิโก จำกัด (SMART PICO Co., Ltd.) ผู้ถือใบอนุญาตประกอบธุรกิจสินเชื่อรายย่อย. เลขที่ใบอนุญาต PICO: 1203/2569. บริษัท…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/cf/33/8acf337b-09a4-dd65-3803-ae30b2c89984/1206x2622_1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/87/16/99/87169991-39c7-01f5-6b3f-c427e6ce90ef/1206x2622_2.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e6/c4/59/e6c459fa-08cc-b4eb-72e2-ea269e05d518/1206x2622_3.png/320x480bb.jpg"],
+      "release_date": "2026-11-10T08:00:00Z",
+      "days_since_release": 5,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 4.76,
+      "rating_count": 225,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 45.0,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6015": 32
+        }
+      },
+      "score": 84.7,
+      "history": {
+        "2026-11-16": 225
       }
     },
     {
@@ -340,35 +372,36 @@
       }
     },
     {
-      "id": "6812260269",
-      "name": "เงินอุ่นใจ-เครดิตดี เชื่อได้",
-      "developer": "SMART PICO COMPANY LIMITED",
+      "id": "6770574709",
+      "name": "Streaming: Trade Stocks & TFEX",
+      "developer": "Settrade.com Company Limited",
       "genre": "Finance",
-      "url": "https://apps.apple.com/th/app/%E0%B9%80%E0%B8%87-%E0%B8%99%E0%B8%AD-%E0%B8%99%E0%B9%83%E0%B8%88-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%94-%E0%B8%95%E0%B8%94-%E0%B9%80%E0%B8%8A-%E0%B8%AD%E0%B9%84%E0%B8%94/id6812260269?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6f/dd/2c/6fdd2c89-ea81-7afd-d396-3087a3d91dd9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
+      "url": "https://apps.apple.com/th/app/streaming-trade-stocks-tfex/id6770574709?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/ba/91/13ba9138-815d-a87c-30f9-53645f2f08fd/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
       "price": "Free",
-      "description": "เกี่ยวกับแอปนี้ เราอยู่ภายใต้การกำกับดูแลอย่างเข้มงวดของสำนักงานนโยบายและแผนการคลัง (FPO) กระทรวงการคลังแห่งประเทศไทย และดำเนินงานภายใต้การอนุญาตของ บริษัท สมาร์ท พิโก จำกัด (SMART PICO Co., Ltd.) ผู้ถือใบอนุญาตประกอบธุรกิจสินเชื่อรายย่อย. เลขที่ใบอนุญาต PICO: 1203/2569. บริษัท…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/cf/33/8acf337b-09a4-dd65-3803-ae30b2c89984/1206x2622_1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/87/16/99/87169991-39c7-01f5-6b3f-c427e6ce90ef/1206x2622_2.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e6/c4/59/e6c459fa-08cc-b4eb-72e2-ea269e05d518/1206x2622_3.png/320x480bb.jpg"],
-      "release_date": "2026-11-10T08:00:00Z",
-      "days_since_release": 5,
+      "description": "The new Streaming: easy to use, with the tools you need Advance orders, conditional orders, and TP/SL. The new Streaming app for stocks and derivatives lets you place orders, monitor trades, and track your portfolio anytime, anywhere. Streaming is developed by Settrade.com…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/27/8b/4f/278b4f85-dd80-2cec-af53-ad705493c3dd/00.Intro_20261026_EN.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9d/ea/a4/9deaa4de-83ff-91da-a268-ba3701b36211/01.Search_20261026_EN.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/67/04/a0/6704a05b-1b7c-9612-6806-cbaa94e5c2e8/02.Trade-Cal_20261026_EN.png/320x480bb.jpg"],
+      "release_date": "2026-11-06T08:00:00Z",
+      "days_since_release": 9,
       "upcoming": false,
       "first_seen": "2026-11-16",
-      "rating": 4.76,
-      "rating_count": 225,
+      "rating": 4.27,
+      "rating_count": 33,
       "rating_count_prev": null,
       "rating_delta": null,
       "rating_delta_days": null,
       "rating_delta_7d": null,
-      "rating_per_day": 45.0,
+      "rating_per_day": 3.7,
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6015": 36
+          "all": 76,
+          "6015": 11
         }
       },
-      "score": 82.3,
+      "score": 81.0,
       "history": {
-        "2026-11-16": 225
+        "2026-11-16": 33
       }
     },
     {
@@ -428,44 +461,12 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6014": 27
+          "6014": 26
         }
       },
-      "score": 78.6,
+      "score": 79.2,
       "history": {
         "2026-11-16": 4935
-      }
-    },
-    {
-      "id": "6770574709",
-      "name": "Streaming: Trade Stocks & TFEX",
-      "developer": "Settrade.com Company Limited",
-      "genre": "Finance",
-      "url": "https://apps.apple.com/th/app/streaming-trade-stocks-tfex/id6770574709?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/ba/91/13ba9138-815d-a87c-30f9-53645f2f08fd/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "The new Streaming: easy to use, with the tools you need Advance orders, conditional orders, and TP/SL. The new Streaming app for stocks and derivatives lets you place orders, monitor trades, and track your portfolio anytime, anywhere. Streaming is developed by Settrade.com…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/27/8b/4f/278b4f85-dd80-2cec-af53-ad705493c3dd/00.Intro_20261026_EN.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9d/ea/a4/9deaa4de-83ff-91da-a268-ba3701b36211/01.Search_20261026_EN.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/67/04/a0/6704a05b-1b7c-9612-6806-cbaa94e5c2e8/02.Trade-Cal_20261026_EN.png/320x480bb.jpg"],
-      "release_date": "2026-11-06T08:00:00Z",
-      "days_since_release": 9,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 4.27,
-      "rating_count": 33,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 3.7,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6015": 21
-        }
-      },
-      "score": 75.0,
-      "history": {
-        "2026-11-16": 33
       }
     },
     {
@@ -502,73 +503,6 @@
       }
     },
     {
-      "id": "6826185069",
-      "name": "SabuyCap - รับเงินง่าย ๆ",
-      "developer": "SINKANLAYA COMPANY LIMITED",
-      "genre": "Finance",
-      "url": "https://apps.apple.com/th/app/sabuycap-%E0%B8%A3-%E0%B8%9A%E0%B9%80%E0%B8%87-%E0%B8%99%E0%B8%87-%E0%B8%B2%E0%B8%A2-%E0%B9%86/id6826185069?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a7/56/cc/a756ccd4-ebdb-978c-5ab0-9c7ab84b2362/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/100x100bb.jpg",
-      "price": "Free",
-      "description": "SabuyCapเป็นแพลตฟอร์มบริการสินเชื่อที่สะดวกสำหรับผู้ใช้งานในประเทศไทยสามารถยื่นคำขอสินเชื่อออนไลน์ผ่านiPhoneได้โดยไม่ต้องใช้หลักทรัพย์หรือผู้ค้ำประกันขั้นตอนสมัครออนไลน์เรียบง่าย พร้อมให้บริการสินเชื่อในประเทศที่ยืดหยุ่นและใส่ใจความต้องการของคุณ ทำไมต้องเลือก SabuyCap?…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0a/39/9b/0a399b6b-fd2c-f7dc-77c8-ec2812adb70f/1.jpg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/d2/18/a5d218fd-94f2-310c-0a63-aa663a24fe86/2.jpg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0d/52/b7/0d52b7bc-3195-18cd-6e79-b6c121291f60/3.jpg/320x480bb.jpg"],
-      "release_date": "2026-11-05T08:00:00Z",
-      "days_since_release": 10,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 2,
-      "rating_count": 4,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 0.4,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6015": 16
-        }
-      },
-      "score": 69.9,
-      "history": {
-        "2026-11-16": 4
-      }
-    },
-    {
-      "id": "6815193752",
-      "name": "Tuni: Learn Mandarin Chinese",
-      "developer": "Wanichaya Thammachot",
-      "genre": "Education",
-      "url": "https://apps.apple.com/th/app/tuni-learn-mandarin-chinese/id6815193752?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/a8/fe/6aa8fe5b-ba77-afa7-c15a-fa4818100db2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "Make Chinese part of your day, one word and one little story at a time. Learn Mandarin Chinese with Tuni, your friendly rabbit study companion. Discover useful vocabulary, read illustrated stories, listen to pronunciation and revisit words in short sessions that fit your day…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/1a/09/531a0958-7b18-27be-28aa-7eda57c29efd/01-learn-chinese_1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1c/fb/80/1cfb8085-5f31-3121-d70d-9bffdb6a6888/02-discover_1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c1/b2/da/c1b2da82-a13b-1789-eb9f-11d10e86e147/03-lock-screen_1.png/320x480bb.jpg"],
-      "release_date": "2026-10-27T07:00:00Z",
-      "days_since_release": 19,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 4.87,
-      "rating_count": 123,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 6.5,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6017": 30
-        },
-        "topgrossing": {
-          "6017": 75
-        }
-      },
-      "score": 69.4,
-      "history": {
-        "2026-11-16": 123
-      }
-    },
-    {
       "id": "6824799515",
       "name": "ปลาเร็ว เงินกู้ว่องไว",
       "developer": "GLORIOUS FINTECH COMPANY LIMITED",
@@ -592,10 +526,10 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6015": 15
+          "6015": 14
         }
       },
-      "score": 68.6,
+      "score": 69.2,
       "history": {
         "2026-11-16": 3
       }
@@ -693,12 +627,79 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6015": 46
+          "6015": 41
+        }
+      },
+      "score": 68.2,
+      "history": {
+        "2026-11-16": 28
+      }
+    },
+    {
+      "id": "6826185069",
+      "name": "SabuyCap - รับเงินง่าย ๆ",
+      "developer": "SINKANLAYA COMPANY LIMITED",
+      "genre": "Finance",
+      "url": "https://apps.apple.com/th/app/sabuycap-%E0%B8%A3-%E0%B8%9A%E0%B9%80%E0%B8%87-%E0%B8%99%E0%B8%87-%E0%B8%B2%E0%B8%A2-%E0%B9%86/id6826185069?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a7/56/cc/a756ccd4-ebdb-978c-5ab0-9c7ab84b2362/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/100x100bb.jpg",
+      "price": "Free",
+      "description": "SabuyCapเป็นแพลตฟอร์มบริการสินเชื่อที่สะดวกสำหรับผู้ใช้งานในประเทศไทยสามารถยื่นคำขอสินเชื่อออนไลน์ผ่านiPhoneได้โดยไม่ต้องใช้หลักทรัพย์หรือผู้ค้ำประกันขั้นตอนสมัครออนไลน์เรียบง่าย พร้อมให้บริการสินเชื่อในประเทศที่ยืดหยุ่นและใส่ใจความต้องการของคุณ ทำไมต้องเลือก SabuyCap?…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0a/39/9b/0a399b6b-fd2c-f7dc-77c8-ec2812adb70f/1.jpg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/d2/18/a5d218fd-94f2-310c-0a63-aa663a24fe86/2.jpg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0d/52/b7/0d52b7bc-3195-18cd-6e79-b6c121291f60/3.jpg/320x480bb.jpg"],
+      "release_date": "2026-11-05T08:00:00Z",
+      "days_since_release": 10,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 2,
+      "rating_count": 4,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.4,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6015": 19
+        }
+      },
+      "score": 68.1,
+      "history": {
+        "2026-11-16": 4
+      }
+    },
+    {
+      "id": "6815193752",
+      "name": "Tuni: Learn Mandarin Chinese",
+      "developer": "Wanichaya Thammachot",
+      "genre": "Education",
+      "url": "https://apps.apple.com/th/app/tuni-learn-mandarin-chinese/id6815193752?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/a8/fe/6aa8fe5b-ba77-afa7-c15a-fa4818100db2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "Make Chinese part of your day, one word and one little story at a time. Learn Mandarin Chinese with Tuni, your friendly rabbit study companion. Discover useful vocabulary, read illustrated stories, listen to pronunciation and revisit words in short sessions that fit your day…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/1a/09/531a0958-7b18-27be-28aa-7eda57c29efd/01-learn-chinese_1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1c/fb/80/1cfb8085-5f31-3121-d70d-9bffdb6a6888/02-discover_1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c1/b2/da/c1b2da82-a13b-1789-eb9f-11d10e86e147/03-lock-screen_1.png/320x480bb.jpg"],
+      "release_date": "2026-10-27T07:00:00Z",
+      "days_since_release": 19,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 4.87,
+      "rating_count": 123,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 6.5,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6017": 37
+        },
+        "topgrossing": {
+          "6017": 75
         }
       },
       "score": 65.2,
       "history": {
-        "2026-11-16": 28
+        "2026-11-16": 123
       }
     },
     {
@@ -725,7 +726,7 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6012": 37
+          "6012": 33
         },
         "topgrossing": {
           "6012": 10
@@ -760,13 +761,13 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6024": 22
+          "6024": 19
         },
         "topgrossing": {
           "6024": 26
         }
       },
-      "score": 62.3,
+      "score": 64.1,
       "history": {
         "2026-11-16": 4
       }
@@ -795,10 +796,10 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6016": 30
+          "6016": 29
         }
       },
-      "score": 62.1,
+      "score": 62.7,
       "history": {
         "2026-11-16": 1
       }
@@ -892,10 +893,10 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6016": 40
+          "6016": 41
         }
       },
-      "score": 59.6,
+      "score": 59.0,
       "history": {
         "2026-11-16": 11
       }
@@ -1022,10 +1023,10 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6015": 25
+          "6015": 27
         }
       },
-      "score": 57.5,
+      "score": 56.3,
       "history": {
         "2026-11-16": 22
       }
@@ -1064,6 +1065,38 @@
       }
     },
     {
+      "id": "6824852950",
+      "name": "Roonpii - สอบติดไปกับพี่ๆ",
+      "developer": "Pannathut Chitpakdee",
+      "genre": "Education",
+      "url": "https://apps.apple.com/th/app/roonpii-%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%95-%E0%B8%94%E0%B9%84%E0%B8%9B%E0%B8%81-%E0%B8%9A%E0%B8%9E-%E0%B9%86/id6824852950?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fe/11/e3/fe11e37b-3b66-ec05-6965-b8e7f4843947/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "Roonpii Tutor (รุ่นพี่ติวเตอร์) — คิดแบบรุ่นพี่ สอบติดแบบรุ่นพี่ แอปสำหรับนักเรียน Roonpii ใช้เรียนคอร์สออนไลน์ของคุณได้ทุกที่ ทั้งบนมือถือและแท็บเล็ต • เรียนคอร์สของคุณ — ดูคลิปบทเรียน ทำต่อจากที่ค้างไว้ และดูความคืบหน้าการเรียน • เอกสารประกอบการเรียน —…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/80/ed/0b80ed4a-b870-adca-da11-6ef361821ac1/roonpii-1-courses.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/0c/62/660c62bd-6059-88a4-60c5-c67a7dda5b1b/roonpii-2-papers.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f7/ba/7d/f7ba7d78-3839-e00d-8fca-5cc2458c8dc9/roonpii-3-articles.png/320x480bb.jpg"],
+      "release_date": "2026-10-22T07:00:00Z",
+      "days_since_release": 24,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 4.86,
+      "rating_count": 14,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.6,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6017": 35
+        }
+      },
+      "score": 54.6,
+      "history": {
+        "2026-11-16": 14
+      }
+    },
+    {
       "id": "6749530428",
       "name": "แคปโอกันด่วน",
       "developer": "CAPITAL OK COMPANY LIMITED",
@@ -1087,10 +1120,10 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6015": 29
+          "6015": 30
         }
       },
-      "score": 53.8,
+      "score": 53.2,
       "history": {
         "2026-11-16": 245
       }
@@ -1189,38 +1222,6 @@
       "score": 52.9,
       "history": {
         "2026-11-16": 0
-      }
-    },
-    {
-      "id": "6824852950",
-      "name": "Roonpii - สอบติดไปกับพี่ๆ",
-      "developer": "Pannathut Chitpakdee",
-      "genre": "Education",
-      "url": "https://apps.apple.com/th/app/roonpii-%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%95-%E0%B8%94%E0%B9%84%E0%B8%9B%E0%B8%81-%E0%B8%9A%E0%B8%9E-%E0%B9%86/id6824852950?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fe/11/e3/fe11e37b-3b66-ec05-6965-b8e7f4843947/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "Roonpii Tutor (รุ่นพี่ติวเตอร์) — คิดแบบรุ่นพี่ สอบติดแบบรุ่นพี่ แอปสำหรับนักเรียน Roonpii ใช้เรียนคอร์สออนไลน์ของคุณได้ทุกที่ ทั้งบนมือถือและแท็บเล็ต • เรียนคอร์สของคุณ — ดูคลิปบทเรียน ทำต่อจากที่ค้างไว้ และดูความคืบหน้าการเรียน • เอกสารประกอบการเรียน —…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/80/ed/0b80ed4a-b870-adca-da11-6ef361821ac1/roonpii-1-courses.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/0c/62/660c62bd-6059-88a4-60c5-c67a7dda5b1b/roonpii-2-papers.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f7/ba/7d/f7ba7d78-3839-e00d-8fca-5cc2458c8dc9/roonpii-3-articles.png/320x480bb.jpg"],
-      "release_date": "2026-10-22T07:00:00Z",
-      "days_since_release": 24,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 4.86,
-      "rating_count": 14,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 0.6,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6017": 39
-        }
-      },
-      "score": 52.2,
-      "history": {
-        "2026-11-16": 14
       }
     },
     {
@@ -1413,7 +1414,7 @@
           "6007": 52
         },
         "topgrossing": {
-          "6007": 85
+          "6007": 98
         }
       },
       "score": 49.5,
@@ -1574,10 +1575,10 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6015": 41
+          "6015": 43
         }
       },
-      "score": 47.5,
+      "score": 46.3,
       "history": {
         "2026-11-16": 4
       }
@@ -1606,13 +1607,13 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6016": 49
+          "6016": 50
         },
         "topgrossing": {
-          "6016": 66
+          "6016": 68
         }
       },
-      "score": 46.9,
+      "score": 46.3,
       "history": {
         "2026-11-16": 4
       }
@@ -1648,38 +1649,6 @@
       "score": 46.1,
       "history": {
         "2026-11-16": 182
-      }
-    },
-    {
-      "id": "6760336659",
-      "name": "Tec สินเชื่ออัจฉริยะ",
-      "developer": "JINTAVAT PICO COMPANY LIMITED",
-      "genre": "Finance",
-      "url": "https://apps.apple.com/th/app/tec-%E0%B8%AA-%E0%B8%99%E0%B9%80%E0%B8%8A-%E0%B8%AD%E0%B8%AD-%E0%B8%88%E0%B8%89%E0%B8%A3-%E0%B8%A2%E0%B8%B0/id6760336659?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8a/e8/19/8ae819b5-b96d-ac2f-b239-5549353e330a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "Tec สินเชื่ออัจฉริยะ เป็นแพลตฟอร์มบริการการเงินดิจิทัลสำหรับผู้ใช้ชาวไทย ผู้ใช้สามารถสมัครบริการทางการเงิน ตรวจสอบวงเงิน ดูรายละเอียดค่าใช้จ่ายและระยะเวลาชำระได้อย่างสะดวกผ่านแอปพลิเคชัน แพลตฟอร์มมุ่งมั่นให้บริการทางการเงินที่โปร่งใส ปลอดภัย ใช้งานง่าย และไม่มีค่าธรรมเนียมแอบแฝง…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/68/83/056883e0-79eb-931e-4135-c70187886c86/1242-2688-01.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/6b/c0/286bc0ac-e5d6-1a7d-3d3e-498b53a9bc55/1242-2688-02.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f3/2a/85/f32a8580-4ba4-e0cc-1173-f00506315911/1242-2688-03.png/320x480bb.jpg"],
-      "release_date": "2026-09-22T07:00:00Z",
-      "days_since_release": 54,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 4.56,
-      "rating_count": 517,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 9.6,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6015": 54
-        }
-      },
-      "score": 45.6,
-      "history": {
-        "2026-11-16": 517
       }
     },
     {
@@ -1776,6 +1745,38 @@
       "score": 44.7,
       "history": {
         "2026-11-16": 55
+      }
+    },
+    {
+      "id": "6760336659",
+      "name": "Tec สินเชื่ออัจฉริยะ",
+      "developer": "JINTAVAT PICO COMPANY LIMITED",
+      "genre": "Finance",
+      "url": "https://apps.apple.com/th/app/tec-%E0%B8%AA-%E0%B8%99%E0%B9%80%E0%B8%8A-%E0%B8%AD%E0%B8%AD-%E0%B8%88%E0%B8%89%E0%B8%A3-%E0%B8%A2%E0%B8%B0/id6760336659?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8a/e8/19/8ae819b5-b96d-ac2f-b239-5549353e330a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "Tec สินเชื่ออัจฉริยะ เป็นแพลตฟอร์มบริการการเงินดิจิทัลสำหรับผู้ใช้ชาวไทย ผู้ใช้สามารถสมัครบริการทางการเงิน ตรวจสอบวงเงิน ดูรายละเอียดค่าใช้จ่ายและระยะเวลาชำระได้อย่างสะดวกผ่านแอปพลิเคชัน แพลตฟอร์มมุ่งมั่นให้บริการทางการเงินที่โปร่งใส ปลอดภัย ใช้งานง่าย และไม่มีค่าธรรมเนียมแอบแฝง…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/68/83/056883e0-79eb-931e-4135-c70187886c86/1242-2688-01.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/6b/c0/286bc0ac-e5d6-1a7d-3d3e-498b53a9bc55/1242-2688-02.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f3/2a/85/f32a8580-4ba4-e0cc-1173-f00506315911/1242-2688-03.png/320x480bb.jpg"],
+      "release_date": "2026-09-22T07:00:00Z",
+      "days_since_release": 54,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 4.56,
+      "rating_count": 517,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 9.6,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6015": 56
+        }
+      },
+      "score": 44.4,
+      "history": {
+        "2026-11-16": 517
       }
     },
     {
@@ -2035,38 +2036,6 @@
       }
     },
     {
-      "id": "6824923408",
-      "name": "TeleCar",
-      "developer": "ADELINA RAILEAN",
-      "genre": "Entertainment",
-      "url": "https://apps.apple.com/th/app/telecar/id6824923408?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/00/e3/79/00e3791a-de73-a980-67b6-3756c4b05467/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "TeleCar plays your own videos and playlists on iPhone and in the car, and guides you there with turn-by-turn navigation. YOUR MEDIA • Your own playlist links and files • Favourites, search, resume where you stopped, Picture in Picture, AirPlay, playback speed, audio tracks and…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fe/bb/46/febb4604-c0c4-c914-8254-83c0642f83b1/01_home.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/82/40/6c/82406c1d-bac8-2bc1-426e-b5c1ee57be94/03_player.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7f/65/ce/7f65ce3c-859d-3e53-16ae-d2d1c2c5553d/04_discover.png/320x480bb.jpg"],
-      "release_date": "2026-11-01T07:00:00Z",
-      "days_since_release": 14,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 5,
-      "rating_count": 1,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 0.1,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6016": 63
-        }
-      },
-      "score": 38.6,
-      "history": {
-        "2026-11-16": 1
-      }
-    },
-    {
       "id": "6754094013",
       "name": "Zombie Assault: Resurgence",
       "developer": "Ninja Kiwi",
@@ -2161,6 +2130,38 @@
       "score": 37.5,
       "history": {
         "2026-11-16": 0
+      }
+    },
+    {
+      "id": "6824923408",
+      "name": "TeleCar",
+      "developer": "ADELINA RAILEAN",
+      "genre": "Entertainment",
+      "url": "https://apps.apple.com/th/app/telecar/id6824923408?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/00/e3/79/00e3791a-de73-a980-67b6-3756c4b05467/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "TeleCar plays your own videos and playlists on iPhone and in the car, and guides you there with turn-by-turn navigation. YOUR MEDIA • Your own playlist links and files • Favourites, search, resume where you stopped, Picture in Picture, AirPlay, playback speed, audio tracks and…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fe/bb/46/febb4604-c0c4-c914-8254-83c0642f83b1/01_home.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/82/40/6c/82406c1d-bac8-2bc1-426e-b5c1ee57be94/03_player.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7f/65/ce/7f65ce3c-859d-3e53-16ae-d2d1c2c5553d/04_discover.png/320x480bb.jpg"],
+      "release_date": "2026-11-01T07:00:00Z",
+      "days_since_release": 14,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 5,
+      "rating_count": 1,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.1,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6016": 66
+        }
+      },
+      "score": 36.8,
+      "history": {
+        "2026-11-16": 1
       }
     },
     {
@@ -2359,38 +2360,6 @@
       }
     },
     {
-      "id": "6827283181",
-      "name": "Keraunic",
-      "developer": "Denys Yevzhetskyi",
-      "genre": "Education",
-      "url": "https://apps.apple.com/th/app/keraunic/id6827283181?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/05/27/3c/05273cfe-2264-5e9e-7d64-997cad9202cf/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "Discover the fascinating science of lightning and thunderstorms with Keraunic, your comprehensive guide to atmospheric electricity. Whether you're a weather enthusiast, student, or storm chaser, this app offers everything you need to understand, observe, and safely experience…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/ef/7e/1bef7e1e-c0f4-f13e-6c47-13f0ead6e28f/1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/6c/97/136c9727-28c7-ce40-1b3f-6c20d4755c3c/2.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1f/a7/98/1fa7985e-1caf-d50f-1d6e-e4feb67cd5d4/3.png/320x480bb.jpg"],
-      "release_date": "2026-11-05T08:00:00Z",
-      "days_since_release": 10,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 0,
-      "rating_count": 0,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 0.0,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6017": 71
-        }
-      },
-      "score": 34.7,
-      "history": {
-        "2026-11-16": 0
-      }
-    },
-    {
       "id": "6826154297",
       "name": "KMatch",
       "developer": "Butsarat Wetchakun",
@@ -2445,9 +2414,6 @@
       "rating_per_day": 0.0,
       "in_new_feed": false,
       "ranks": {
-        "topfree": {
-          "6012": 89
-        },
         "topgrossing": {
           "6012": 74
         }
@@ -2488,38 +2454,6 @@
       "score": 33.4,
       "history": {
         "2026-11-16": 14
-      }
-    },
-    {
-      "id": "6770465753",
-      "name": "WORPT",
-      "developer": "Wipay Company limited",
-      "genre": "Finance",
-      "url": "https://apps.apple.com/th/app/worpt/id6770465753?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2f/ec/21/2fec21a7-f2ad-e9c7-08c2-4034e8c81318/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "WORPT helps travelers in Thailand spend digital assets with ease. Convert supported stablecoins into Thai Baht, scan PromptPay QR codes, and pay local merchants across Thailand. Designed for seamless local payments, without cash exchange or complicated transfers. HOW WORPT WORKS…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/a3/9f/65a39fd9-73fa-6b97-0c43-036406fc5d92/ios-1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/40/ca/da/40cada75-859e-ee6c-181a-1a1322e61b50/ios-2.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4d/49/53/4d495314-cf1f-a298-a019-fac62abcac29/ios-3.png/320x480bb.jpg"],
-      "release_date": "2026-11-11T08:00:00Z",
-      "days_since_release": 4,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 5,
-      "rating_count": 7,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 1.8,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6015": 90
-        }
-      },
-      "score": 31.9,
-      "history": {
-        "2026-11-16": 7
       }
     },
     {
@@ -2619,6 +2553,70 @@
       }
     },
     {
+      "id": "6830564338",
+      "name": "Istrenvo",
+      "developer": "taha tekir",
+      "genre": "Education",
+      "url": "https://apps.apple.com/th/app/istrenvo/id6830564338?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8f/60/3d/8f603d85-8a73-30dd-5df8-109c80573e48/AppIcon-1x_U007epad-0-1-85-220-0.jpeg/100x100bb.jpg",
+      "price": "Free",
+      "description": "Mehr Ankerleine verändert den Raum, den ein Boot um seinen Anker einnehmen kann. Auch ein steigender Wasserstand verändert die Geometrie. Ein kleinerer horizontaler Radius bedeutet dabei nicht automatisch ein günstigeres Verhältnis von Länge zu Tiefe. Istrenvo zeigt diese Größen…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/07/61/9f0761ba-e57d-78c1-9fa5-c8cf550499ce/01.jpg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c4/25/35/c425355b-9aca-e124-01a7-82a27bc6145f/02.jpg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/0e/2b/eb0e2b0d-07eb-d92b-9199-f85415e061d3/03.jpg/320x480bb.jpg"],
+      "release_date": "2026-11-06T08:00:00Z",
+      "days_since_release": 9,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 0,
+      "rating_count": 0,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.0,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6017": 79
+        }
+      },
+      "score": 30.2,
+      "history": {
+        "2026-11-16": 0
+      }
+    },
+    {
+      "id": "6818243651",
+      "name": "Carvia - Car M3U IPTV Player",
+      "developer": "UNION COMMUNICATIONS AGENCY LIMITED",
+      "genre": "Entertainment",
+      "url": "https://apps.apple.com/th/app/carvia-car-m3u-iptv-player/id6818243651?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/29/22/582922f1-5297-f4e0-0534-94790a1f8d76/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "Carvia brings your own M3U / M3U8 playlists to the car. Add a playlist link once, then watch your live channels and videos on your iPhone — and, when the car is parked, right on the CarPlay screen. ON THE CAR SCREEN • Opens in every CarPlay car, including cars without CarPlay…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/06/a8/fd/06a8fd4a-d2ea-8617-a7a6-aae0ba3c074f/1_video.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ef/e5/27/efe5276d-3326-fcbb-659f-956b94362d86/2_channels.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/8d/01/b08d010a-4e37-ce7d-fd10-659554fb9718/3_browser.png/320x480bb.jpg"],
+      "release_date": "2026-10-11T07:00:00Z",
+      "days_since_release": 35,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 4.25,
+      "rating_count": 8,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.2,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6016": 67
+        }
+      },
+      "score": 30.1,
+      "history": {
+        "2026-11-16": 8
+      }
+    },
+    {
       "id": "6762813110",
       "name": "Sifu",
       "developer": "Kepler Interactive",
@@ -2652,67 +2650,35 @@
       }
     },
     {
-      "id": "6818243651",
-      "name": "Carvia - Car M3U IPTV Player",
-      "developer": "UNION COMMUNICATIONS AGENCY LIMITED",
-      "genre": "Entertainment",
-      "url": "https://apps.apple.com/th/app/carvia-car-m3u-iptv-player/id6818243651?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/29/22/582922f1-5297-f4e0-0534-94790a1f8d76/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
+      "id": "6827283181",
+      "name": "Keraunic",
+      "developer": "Denys Yevzhetskyi",
+      "genre": "Education",
+      "url": "https://apps.apple.com/th/app/keraunic/id6827283181?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/05/27/3c/05273cfe-2264-5e9e-7d64-997cad9202cf/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
       "price": "Free",
-      "description": "Carvia brings your own M3U / M3U8 playlists to the car. Add a playlist link once, then watch your live channels and videos on your iPhone — and, when the car is parked, right on the CarPlay screen. ON THE CAR SCREEN • Opens in every CarPlay car, including cars without CarPlay…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/06/a8/fd/06a8fd4a-d2ea-8617-a7a6-aae0ba3c074f/1_video.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ef/e5/27/efe5276d-3326-fcbb-659f-956b94362d86/2_channels.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/8d/01/b08d010a-4e37-ce7d-fd10-659554fb9718/3_browser.png/320x480bb.jpg"],
-      "release_date": "2026-10-11T07:00:00Z",
-      "days_since_release": 35,
+      "description": "Discover the fascinating science of lightning and thunderstorms with Keraunic, your comprehensive guide to atmospheric electricity. Whether you're a weather enthusiast, student, or storm chaser, this app offers everything you need to understand, observe, and safely experience…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/ef/7e/1bef7e1e-c0f4-f13e-6c47-13f0ead6e28f/1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/6c/97/136c9727-28c7-ce40-1b3f-6c20d4755c3c/2.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1f/a7/98/1fa7985e-1caf-d50f-1d6e-e4feb67cd5d4/3.png/320x480bb.jpg"],
+      "release_date": "2026-11-05T08:00:00Z",
+      "days_since_release": 10,
       "upcoming": false,
       "first_seen": "2026-11-16",
-      "rating": 4.25,
-      "rating_count": 8,
+      "rating": 0,
+      "rating_count": 0,
       "rating_count_prev": null,
       "rating_delta": null,
       "rating_delta_days": null,
       "rating_delta_7d": null,
-      "rating_per_day": 0.2,
+      "rating_per_day": 0.0,
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6016": 68
+          "6017": 80
         }
       },
-      "score": 29.5,
+      "score": 29.3,
       "history": {
-        "2026-11-16": 8
-      }
-    },
-    {
-      "id": "6828564119",
-      "name": "Buymechocolate AI",
-      "developer": "Chanan Sukjirawanit",
-      "genre": "Entertainment",
-      "url": "https://apps.apple.com/th/app/buymechocolate-ai/id6828564119?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/a1/77/36a177b2-ad2a-00b4-aefb-88df4b83ed75/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "Buymechocolate AI — แชทกับตัวละคร AI สำหรับคนชอบเรื่องราว โรแมนซ์ และการเล่นบทบาท • สนทนากับตัวละครที่ครีเอเตอร์สร้างขึ้น • สร้างตัวละครและเรื่องราวของคุณเอง • เล่นควิซและแชร์โมเมนต์กับชุมชน • รายงานข้อความ AI หรือเนื้อหาที่ไม่เหมาะสม และบล็อกผู้ใช้ได้…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/de/2b/34/de2b34a8-6f0c-08e4-175c-1327c6b73bf2/01-discover-sky.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/52/ba/d1/52bad1aa-86ab-3b75-297b-75b7f411e2f0/02-chat.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/72/7b/34/727b34b9-9880-b021-2fbd-39888e001114/03-quiz.png/320x480bb.jpg"],
-      "release_date": "2026-11-02T08:00:00Z",
-      "days_since_release": 13,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 5,
-      "rating_count": 6,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 0.5,
-      "in_new_feed": false,
-      "ranks": {
-        "topgrossing": {
-          "6016": 84
-        }
-      },
-      "score": 28.3,
-      "history": {
-        "2026-11-16": 6
+        "2026-11-16": 0
       }
     },
     {
@@ -2771,12 +2737,76 @@
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6016": 70
+          "6016": 69
         }
       },
-      "score": 27.3,
+      "score": 27.9,
       "history": {
         "2026-11-16": 2
+      }
+    },
+    {
+      "id": "6770465753",
+      "name": "WORPT",
+      "developer": "Wipay Company limited",
+      "genre": "Finance",
+      "url": "https://apps.apple.com/th/app/worpt/id6770465753?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2f/ec/21/2fec21a7-f2ad-e9c7-08c2-4034e8c81318/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "WORPT helps travelers in Thailand spend digital assets with ease. Convert supported stablecoins into Thai Baht, scan PromptPay QR codes, and pay local merchants across Thailand. Designed for seamless local payments, without cash exchange or complicated transfers. HOW WORPT WORKS…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/a3/9f/65a39fd9-73fa-6b97-0c43-036406fc5d92/ios-1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/40/ca/da/40cada75-859e-ee6c-181a-1a1322e61b50/ios-2.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4d/49/53/4d495314-cf1f-a298-a019-fac62abcac29/ios-3.png/320x480bb.jpg"],
+      "release_date": "2026-11-11T08:00:00Z",
+      "days_since_release": 4,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 5,
+      "rating_count": 7,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 1.8,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6015": 98
+        }
+      },
+      "score": 27.1,
+      "history": {
+        "2026-11-16": 7
+      }
+    },
+    {
+      "id": "6828564119",
+      "name": "Buymechocolate AI",
+      "developer": "Chanan Sukjirawanit",
+      "genre": "Entertainment",
+      "url": "https://apps.apple.com/th/app/buymechocolate-ai/id6828564119?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/a1/77/36a177b2-ad2a-00b4-aefb-88df4b83ed75/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "Buymechocolate AI — แชทกับตัวละคร AI สำหรับคนชอบเรื่องราว โรแมนซ์ และการเล่นบทบาท • สนทนากับตัวละครที่ครีเอเตอร์สร้างขึ้น • สร้างตัวละครและเรื่องราวของคุณเอง • เล่นควิซและแชร์โมเมนต์กับชุมชน • รายงานข้อความ AI หรือเนื้อหาที่ไม่เหมาะสม และบล็อกผู้ใช้ได้…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/de/2b/34/de2b34a8-6f0c-08e4-175c-1327c6b73bf2/01-discover-sky.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/52/ba/d1/52bad1aa-86ab-3b75-297b-75b7f411e2f0/02-chat.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/72/7b/34/727b34b9-9880-b021-2fbd-39888e001114/03-quiz.png/320x480bb.jpg"],
+      "release_date": "2026-11-02T08:00:00Z",
+      "days_since_release": 13,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 5,
+      "rating_count": 6,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.5,
+      "in_new_feed": false,
+      "ranks": {
+        "topgrossing": {
+          "6016": 87
+        }
+      },
+      "score": 26.5,
+      "history": {
+        "2026-11-16": 6
       }
     },
     {
@@ -2908,38 +2938,6 @@
       }
     },
     {
-      "id": "6817187470",
-      "name": "LaeNamHatyai: แลนำ้หาดใหญ่",
-      "developer": "krittee tevamit",
-      "genre": "Lifestyle",
-      "url": "https://apps.apple.com/th/app/laenamhatyai-%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%B3-%E0%B8%AB%E0%B8%B2%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D/id6817187470?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/92/7e/27927ebd-0d3b-3f11-9ae5-c86ee10379e2/AppIcon-0-1x_U007epad-0-1-85-220-0.jpeg/100x100bb.jpg",
-      "price": "Free",
-      "description": "แลน้ำหาดใหญ่ช่วยให้คุณติดตามภาพจากกล้องในพื้นที่หาดใหญ่ และเตรียมแผนรับมือน้ำท่วมที่เหมาะกับตัวเอง • เลือกกล้องที่ติดตาม ค้นหาสถานที่ และดูตำแหน่งกล้องบนแผนที่ • เปิดดูภาพเต็ม ตรวจเวลาไฟล์ภาพและเวลาที่แอปตรวจภาพล่าสุด พร้อมดูสถานะเมื่อภาพอาจไม่เป็นปัจจุบัน •…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ac/29/8b/ac298b07-4345-6e38-e9f7-d16e82161198/Slide2.jpeg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/25/2f/60/252f60eb-cd3d-dabd-f5d2-91190e454a44/Slide3.jpeg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3c/66/ef/3c66ef0a-7930-702d-ec6e-5a5d731d960e/Slide4.jpeg/320x480bb.jpg"],
-      "release_date": "2026-09-29T07:00:00Z",
-      "days_since_release": 47,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 4,
-      "rating_count": 1,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 0.0,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6012": 72
-        }
-      },
-      "score": 21.9,
-      "history": {
-        "2026-11-16": 1
-      }
-    },
-    {
       "id": "6811883380",
       "name": "Calkub - Calorie Tracker",
       "developer": "Rolando Parame",
@@ -2969,6 +2967,38 @@
       "score": 21.5,
       "history": {
         "2026-11-16": 4
+      }
+    },
+    {
+      "id": "6817187470",
+      "name": "LaeNamHatyai: แลนำ้หาดใหญ่",
+      "developer": "krittee tevamit",
+      "genre": "Lifestyle",
+      "url": "https://apps.apple.com/th/app/laenamhatyai-%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%B3-%E0%B8%AB%E0%B8%B2%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D/id6817187470?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/92/7e/27927ebd-0d3b-3f11-9ae5-c86ee10379e2/AppIcon-0-1x_U007epad-0-1-85-220-0.jpeg/100x100bb.jpg",
+      "price": "Free",
+      "description": "แลน้ำหาดใหญ่ช่วยให้คุณติดตามภาพจากกล้องในพื้นที่หาดใหญ่ และเตรียมแผนรับมือน้ำท่วมที่เหมาะกับตัวเอง • เลือกกล้องที่ติดตาม ค้นหาสถานที่ และดูตำแหน่งกล้องบนแผนที่ • เปิดดูภาพเต็ม ตรวจเวลาไฟล์ภาพและเวลาที่แอปตรวจภาพล่าสุด พร้อมดูสถานะเมื่อภาพอาจไม่เป็นปัจจุบัน •…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ac/29/8b/ac298b07-4345-6e38-e9f7-d16e82161198/Slide2.jpeg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/25/2f/60/252f60eb-cd3d-dabd-f5d2-91190e454a44/Slide3.jpeg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3c/66/ef/3c66ef0a-7930-702d-ec6e-5a5d731d960e/Slide4.jpeg/320x480bb.jpg"],
+      "release_date": "2026-09-29T07:00:00Z",
+      "days_since_release": 47,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 4,
+      "rating_count": 1,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.0,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6012": 74
+        }
+      },
+      "score": 20.7,
+      "history": {
+        "2026-11-16": 1
       }
     },
     {
@@ -3004,6 +3034,38 @@
       }
     },
     {
+      "id": "6827878692",
+      "name": "KPT Plus",
+      "developer": "peerapat wivatpong",
+      "genre": "Education",
+      "url": "https://apps.apple.com/th/app/kpt-plus/id6827878692?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/75/ba/c275ba79-4683-c87d-9712-06abe1daa1a8/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "KPT Plus แอปพลิเคชันสำหรับนักเรียน นักศึกษา อาจารย์ เจ้าหน้าที่ และผู้ปกครองของวิทยาลัยเทคนิคกำแพงเพชร ช่วยเข้าถึงข้อมูลการศึกษาและสื่อสารกับวิทยาลัยได้สะดวกยิ่งขึ้น ฟังก์ชันหลัก • ดูตารางเรียน ตารางสอน และข้อมูลการเรียน • แสดง QR Code และใช้งานระบบเช็คชื่อตามสิทธิ์ •…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1d/1f/ac/1d1fac68-620d-73e6-c4c5-95d7327c4e2b/Screenshot_iPhone_17_29-10-2569_BE_at_14.28.09.png/320x480bb.jpg"],
+      "release_date": "2026-11-01T07:00:00Z",
+      "days_since_release": 14,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 5,
+      "rating_count": 1,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.1,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6017": 94
+        }
+      },
+      "score": 20.0,
+      "history": {
+        "2026-11-16": 1
+      }
+    },
+    {
       "id": "6794294413",
       "name": "แดชมันนี่",
       "developer": "PHANUNGOENDUAN COMPANY LIMITED",
@@ -3025,78 +3087,10 @@
       "rating_delta_7d": null,
       "rating_per_day": 12.5,
       "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6015": 98
-        }
-      },
-      "score": 20.1,
+      "ranks": {},
+      "score": 18.3,
       "history": {
         "2026-11-16": 701
-      }
-    },
-    {
-      "id": "6806116304",
-      "name": "LawCast: ฟัง อ่าน ท่องกฎหมาย",
-      "developer": "Golf Pakorn",
-      "genre": "Education",
-      "url": "https://apps.apple.com/th/app/lawcast-%E0%B8%9F-%E0%B8%87-%E0%B8%AD-%E0%B8%B2%E0%B8%99-%E0%B8%97-%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2/id6806116304?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/11/13/3b/11133bb5-9111-a172-0e0c-e1c774b9a400/LawCast-Four-Group-Hardware-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "อ่านให้เข้าใจ ฟังให้คุ้น และทบทวนมาตราที่อยากจำกับ LawCast แอปกฎหมายไทยสำหรับนักศึกษานิติศาสตร์ ผู้เตรียมสอบ และคนที่ใช้ตัวบทเป็นประจำ จากการเปิดอ่านหนึ่งมาตรา สู่ชุดทบทวนของคุณเอง เลือกตัวบทที่สนใจ จดประเด็นสำคัญ แล้วกลับมาฝึกจำตามรอบที่เหมาะกับคุณ • ค้น อ่าน…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/10/10/ef/1010ef98-236d-6dca-c6ae-cbeded60b2e6/LawCast-01-1206x2622.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/5f/6e/8a5f6e7b-16aa-3f21-7de6-a30aa4bb5916/LawCast-02-1206x2622.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bd/7c/f0/bd7cf05b-12e1-028c-993a-2a855f181877/LawCast-03-1206x2622.png/320x480bb.jpg"],
-      "release_date": "2026-09-29T07:00:00Z",
-      "days_since_release": 47,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 4.43,
-      "rating_count": 7,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 0.1,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6017": 77
-        }
-      },
-      "score": 19.6,
-      "history": {
-        "2026-11-16": 7
-      }
-    },
-    {
-      "id": "6823907969",
-      "name": "FinGenius: EMI & Dues Tracker",
-      "developer": "Milan Chatrola",
-      "genre": "Finance",
-      "url": "https://apps.apple.com/th/app/fingenius-emi-dues-tracker/id6823907969?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/5e/b8/e25eb815-8c73-7c28-31fc-8b8a4af7d472/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "FinGenius helps you understand your loans and stay on top of what you owe — with calculators, planners and reminders in one simple app. No sign-up. No bank login. Your entries stay on your device. TRACK WHAT'S DUE • Loan EMIs – add your running loans and see what's due next, how…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c6/d3/7c/c6d37cdf-6761-0b2b-e399-651b342bd515/screenshot_1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/3d/c5/793dc56b-4d1c-64ca-0c7a-36ab20baf0c6/screenshot_2.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0c/dd/30/0cdd3022-aba1-b409-d7f9-21fd8621c8cb/screenshot_3.png/320x480bb.jpg"],
-      "release_date": "2026-10-22T07:00:00Z",
-      "days_since_release": 24,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 0,
-      "rating_count": 0,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 0.0,
-      "in_new_feed": false,
-      "ranks": {
-        "topfree": {
-          "6015": 91
-        }
-      },
-      "score": 18.0,
-      "history": {
-        "2026-11-16": 0
       }
     },
     {
@@ -3164,6 +3158,38 @@
       }
     },
     {
+      "id": "6823907969",
+      "name": "FinGenius: EMI & Dues Tracker",
+      "developer": "Milan Chatrola",
+      "genre": "Finance",
+      "url": "https://apps.apple.com/th/app/fingenius-emi-dues-tracker/id6823907969?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/5e/b8/e25eb815-8c73-7c28-31fc-8b8a4af7d472/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "FinGenius helps you understand your loans and stay on top of what you owe — with calculators, planners and reminders in one simple app. No sign-up. No bank login. Your entries stay on your device. TRACK WHAT'S DUE • Loan EMIs – add your running loans and see what's due next, how…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c6/d3/7c/c6d37cdf-6761-0b2b-e399-651b342bd515/screenshot_1.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/3d/c5/793dc56b-4d1c-64ca-0c7a-36ab20baf0c6/screenshot_2.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0c/dd/30/0cdd3022-aba1-b409-d7f9-21fd8621c8cb/screenshot_3.png/320x480bb.jpg"],
+      "release_date": "2026-10-22T07:00:00Z",
+      "days_since_release": 24,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 0,
+      "rating_count": 0,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.0,
+      "in_new_feed": false,
+      "ranks": {
+        "topfree": {
+          "6015": 96
+        }
+      },
+      "score": 15.0,
+      "history": {
+        "2026-11-16": 0
+      }
+    },
+    {
       "id": "6803406429",
       "name": "Timestamp Camera - GPS, Date",
       "developer": "Yikens Technology HK Limited",
@@ -3199,67 +3225,35 @@
       }
     },
     {
-      "id": "6762030901",
-      "name": "Talko: Learn English with AI",
-      "developer": "Soly Limited",
+      "id": "6806116304",
+      "name": "LawCast: ฟัง อ่าน ท่องกฎหมาย",
+      "developer": "Golf Pakorn",
       "genre": "Education",
-      "url": "https://apps.apple.com/th/app/talko-learn-english-with-ai/id6762030901?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/8e/36/578e361d-edce-4e36-f220-40446681216a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "url": "https://apps.apple.com/th/app/lawcast-%E0%B8%9F-%E0%B8%87-%E0%B8%AD-%E0%B8%B2%E0%B8%99-%E0%B8%97-%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2/id6806116304?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/11/13/3b/11133bb5-9111-a172-0e0c-e1c774b9a400/LawCast-Four-Group-Hardware-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
       "price": "Free",
-      "description": "Freezing Up? Tongue-Tied? Can't Get the Words Out? You've just arrived in a new country, and the only thing you can say when ordering food is, \"This.\" Trying to get your security deposit back leaves you completely flustered. Then you walk into a job interview—and your mind goes…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1e/43/01/1e4301ee-e3d0-ae9d-7011-cedae1b8efa5/en-US-01.jpg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/be/b5/71/beb571a3-ffeb-aaef-2de4-f60b5cf5552b/en-US-02.jpg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/15/02/9a1502a1-57d6-2648-1ccb-9da4d0f85a50/en-US-03.jpg/320x480bb.jpg"],
-      "release_date": "2026-09-23T07:00:00Z",
-      "days_since_release": 53,
+      "description": "อ่านให้เข้าใจ ฟังให้คุ้น และทบทวนมาตราที่อยากจำกับ LawCast แอปกฎหมายไทยสำหรับนักศึกษานิติศาสตร์ ผู้เตรียมสอบ และคนที่ใช้ตัวบทเป็นประจำ จากการเปิดอ่านหนึ่งมาตรา สู่ชุดทบทวนของคุณเอง เลือกตัวบทที่สนใจ จดประเด็นสำคัญ แล้วกลับมาฝึกจำตามรอบที่เหมาะกับคุณ • ค้น อ่าน…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/10/10/ef/1010ef98-236d-6dca-c6ae-cbeded60b2e6/LawCast-01-1206x2622.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/5f/6e/8a5f6e7b-16aa-3f21-7de6-a30aa4bb5916/LawCast-02-1206x2622.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bd/7c/f0/bd7cf05b-12e1-028c-993a-2a855f181877/LawCast-03-1206x2622.png/320x480bb.jpg"],
+      "release_date": "2026-09-29T07:00:00Z",
+      "days_since_release": 47,
       "upcoming": false,
       "first_seen": "2026-11-16",
-      "rating": 5,
-      "rating_count": 8,
+      "rating": 4.43,
+      "rating_count": 7,
       "rating_count_prev": null,
       "rating_delta": null,
       "rating_delta_days": null,
       "rating_delta_7d": null,
-      "rating_per_day": 0.2,
+      "rating_per_day": 0.1,
       "in_new_feed": false,
       "ranks": {
         "topfree": {
-          "6017": 91
+          "6017": 92
         }
       },
-      "score": 9.2,
+      "score": 10.6,
       "history": {
-        "2026-11-16": 8
-      }
-    },
-    {
-      "id": "6797708554",
-      "name": "IF Drama Chat: AI Video",
-      "developer": "Abovetech Inc.",
-      "genre": "Entertainment",
-      "url": "https://apps.apple.com/th/app/if-drama-chat-ai-video/id6797708554?uo=4",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d4/80/6a/d4806a91-9b4b-3084-6ce0-d40c3fd8c81c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-      "price": "Free",
-      "description": "Choose a story, make the next choice, and watch your decision become a cinematic scene. IF Drama turns interactive storytelling into an unfolding video experience shaped by you. DISCOVER STORIES Browse character-led mystery, adventure, and drama worlds, then open the one you…",
-      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/2b/68/022b6873-1252-8a09-a66c-abbd37095fb7/v67-iphone-01.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/90/23/b1/9023b1aa-3cb1-3c67-1a85-a487df0e8aa8/v67-iphone-02.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/15/6f/74/156f7405-8500-e1e8-0bb2-e73fd81805fe/v67-iphone-03.png/320x480bb.jpg"],
-      "release_date": "2026-09-16T07:00:00Z",
-      "days_since_release": 60,
-      "upcoming": false,
-      "first_seen": "2026-11-16",
-      "rating": 4.29,
-      "rating_count": 17,
-      "rating_count_prev": null,
-      "rating_delta": null,
-      "rating_delta_days": null,
-      "rating_delta_7d": null,
-      "rating_per_day": 0.3,
-      "in_new_feed": false,
-      "ranks": {
-        "topgrossing": {
-          "6016": 93
-        }
-      },
-      "score": 6.4,
-      "history": {
-        "2026-11-16": 17
+        "2026-11-16": 7
       }
     },
     {
@@ -3292,6 +3286,66 @@
       "score": 4.3,
       "history": {
         "2026-11-16": 3
+      }
+    },
+    {
+      "id": "6797708554",
+      "name": "IF Drama Chat: AI Video",
+      "developer": "Abovetech Inc.",
+      "genre": "Entertainment",
+      "url": "https://apps.apple.com/th/app/if-drama-chat-ai-video/id6797708554?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d4/80/6a/d4806a91-9b4b-3084-6ce0-d40c3fd8c81c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "Choose a story, make the next choice, and watch your decision become a cinematic scene. IF Drama turns interactive storytelling into an unfolding video experience shaped by you. DISCOVER STORIES Browse character-led mystery, adventure, and drama worlds, then open the one you…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/2b/68/022b6873-1252-8a09-a66c-abbd37095fb7/v67-iphone-01.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/90/23/b1/9023b1aa-3cb1-3c67-1a85-a487df0e8aa8/v67-iphone-02.png/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/15/6f/74/156f7405-8500-e1e8-0bb2-e73fd81805fe/v67-iphone-03.png/320x480bb.jpg"],
+      "release_date": "2026-09-16T07:00:00Z",
+      "days_since_release": 60,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 4.29,
+      "rating_count": 17,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.3,
+      "in_new_feed": false,
+      "ranks": {
+        "topgrossing": {
+          "6016": 97
+        }
+      },
+      "score": 4.0,
+      "history": {
+        "2026-11-16": 17
+      }
+    },
+    {
+      "id": "6762030901",
+      "name": "Talko: Learn English with AI",
+      "developer": "Soly Limited",
+      "genre": "Education",
+      "url": "https://apps.apple.com/th/app/talko-learn-english-with-ai/id6762030901?uo=4",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/8e/36/578e361d-edce-4e36-f220-40446681216a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "price": "Free",
+      "description": "Freezing Up? Tongue-Tied? Can't Get the Words Out? You've just arrived in a new country, and the only thing you can say when ordering food is, \"This.\" Trying to get your security deposit back leaves you completely flustered. Then you walk into a job interview—and your mind goes…",
+      "screenshots": ["https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1e/43/01/1e4301ee-e3d0-ae9d-7011-cedae1b8efa5/en-US-01.jpg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/be/b5/71/beb571a3-ffeb-aaef-2de4-f60b5cf5552b/en-US-02.jpg/320x480bb.jpg","https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/15/02/9a1502a1-57d6-2648-1ccb-9da4d0f85a50/en-US-03.jpg/320x480bb.jpg"],
+      "release_date": "2026-09-23T07:00:00Z",
+      "days_since_release": 53,
+      "upcoming": false,
+      "first_seen": "2026-11-16",
+      "rating": 5,
+      "rating_count": 8,
+      "rating_count_prev": null,
+      "rating_delta": null,
+      "rating_delta_days": null,
+      "rating_delta_7d": null,
+      "rating_per_day": 0.2,
+      "in_new_feed": false,
+      "ranks": {},
+      "score": 3.2,
+      "history": {
+        "2026-11-16": 8
       }
     },
     {
