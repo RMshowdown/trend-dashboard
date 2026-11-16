@@ -120,23 +120,102 @@ def fetch_chart(country, feed, limit, genre_id=None):
     return apps
 
 
-def lookup(country, ids, chunk=150):
+CACHE = ROOT / ".cache"
+CACHE_HOURS = 6
+
+
+def lookup(country, ids, chunk=150, lang="en_us"):
     """ดึงรายละเอียดแอป (วันปล่อย รีวิว คำอธิบาย) จาก iTunes Lookup API
 
     แอปที่ไม่มีขายในประเทศนั้นจะไม่อยู่ในผลลัพธ์ จึงใช้เช็กได้ด้วยว่าแอปมีในสโตร์ประเทศไหน
+
+    ผลลัพธ์ถูกเก็บไว้ใน .cache/ ชั่วคราว (ไม่ commit) สคริปต์ที่รันต่อกันในรอบเดียว
+    จึงไม่ต้องถาม Apple ซ้ำสำหรับแอปเดิม
+
+    lang เลือกภาษาของชื่อและคำอธิบายที่ได้กลับมา (ถ้านักพัฒนาทำหน้าสโตร์ภาษานั้นไว้)
     """
-    info = {}
-    ids = list(ids)
+    ids = list(dict.fromkeys(str(i) for i in ids))
+    cache_file = CACHE / f"lookup-{country}-{lang}.json"
+    cache = load_json(cache_file, {})
+    fresh = False
+    if cache.get("fetched_at"):
+        age = (utc_now() - parse_date(cache["fetched_at"])).total_seconds() / 3600
+        fresh = age < CACHE_HOURS
+    if not fresh:
+        cache = {"fetched_at": utc_now().isoformat(timespec="seconds"), "found": {}, "missing": []}
+    missing = set(cache["missing"])
+    info = {i: cache["found"][i] for i in ids if i in cache["found"]}
+    todo = [i for i in ids if i not in cache["found"] and i not in missing]
+    for r in _lookup_remote(country, todo, chunk, missing, lang):
+        info[str(r["trackId"])] = cache["found"][str(r["trackId"])] = r
+    if todo:
+        cache["missing"] = sorted(missing)
+        write_json(cache_file, cache, indent=None)
+    return info
+
+
+def _lookup_remote(country, ids, chunk, missing, lang):
+    found = []
     for i in range(0, len(ids), chunk):
         part = ids[i:i + chunk]
-        url = f"https://itunes.apple.com/lookup?id={','.join(part)}&country={country}&lang=en_us"
+        url = f"https://itunes.apple.com/lookup?id={','.join(part)}&country={country}&lang={lang}"
         try:
             results = get_json(url).get("results", [])
         except RuntimeError as e:
             warn(f"lookup ({country}) failed, skipping {len(part)} apps ({e})")
             continue
-        for r in results:
-            if "trackId" in r:
-                info[str(r["trackId"])] = r
+        got = {str(r["trackId"]) for r in results if "trackId" in r}
+        found.extend(r for r in results if "trackId" in r)
+        # จำแอปที่ Apple ไม่ส่งกลับมาด้วย จะได้ไม่ถามซ้ำ (แต่ถ้าคำขอล้ม ไม่นับว่าไม่มี)
+        missing.update(i for i in part if i not in got)
         time.sleep(1)
-    return info
+    return found
+
+
+def load_themes():
+    """อ่านรายการธีมจาก config/themes.json แล้วเตรียม regex ไว้ใช้ซ้ำ"""
+    themes = []
+    for t in load_json(ROOT / "config" / "themes.json", {}).get("themes", []):
+        parts = []
+        for kw in t["keywords"]:
+            kw = kw.lower()
+            # คำอังกฤษจับทั้งคำ (ไม่ให้ "ai" ไปตรงกับ "main") คำไทยไม่มีช่องว่างจึงจับแบบส่วนหนึ่งของข้อความ
+            parts.append(rf"\b{re.escape(kw)}\b" if kw.isascii() else re.escape(kw))
+        themes.append((t["name"], re.compile("|".join(parts))))
+    return themes
+
+
+def tag_themes(themes, name, description, limit=3, game=False):
+    """ติดป้ายธีมให้แอปจากชื่อและคำอธิบาย ชื่อมีน้ำหนักมากกว่าคำอธิบาย
+
+    เกมใช้เฉพาะธีมที่ขึ้นต้นด้วย "Game:" เพราะคำอธิบายเกมมักมีคำอย่าง pet หรือ chat ที่ไม่ได้บอกประเภทแอป
+    """
+    name = (name or "").lower()
+    description = (description or "").lower()
+    scored = []
+    for order, (theme, pattern) in enumerate(themes):
+        if theme.startswith("Game:") != game:
+            continue
+        score = 3 * len(pattern.findall(name)) + min(3, len(pattern.findall(description)))
+        if score >= 2:
+            scored.append((-score, order, theme))
+    return [theme for _, _, theme in sorted(scored)[:limit]]
+
+
+def chart_presence(country):
+    """นับจำนวนวันที่แต่ละแอปอยู่ในชาร์ต (ชาร์ตไหนก็ได้) จากประวัติอันดับ
+
+    คืน ({app_id: จำนวนวัน}, จำนวนวันที่มีข้อมูลทั้งหมด)
+    """
+    by_app = {}
+    all_days = set()
+    for path in (DATA / "rank_history").glob("*.json"):
+        h = load_json(path, {})
+        if h.get("country") != country:
+            continue
+        for day, ids in h.get("days", {}).items():
+            all_days.add(day)
+            for app_id in ids:
+                if app_id:
+                    by_app.setdefault(app_id, set()).add(day)
+    return {app_id: len(days) for app_id, days in by_app.items()}, len(all_days)

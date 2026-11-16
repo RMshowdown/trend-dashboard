@@ -155,6 +155,17 @@ tr.details td { padding: 4px 16px 14px 60px; background: color-mix(in srgb, var(
   cursor: pointer;
 }
 .more:hover { color: var(--accent); border-color: var(--accent); }
+.star {
+  flex: none;
+  padding: 0 4px;
+  border: none;
+  background: none;
+  color: var(--muted);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.star:hover, .star.on { color: #d99a00; }
 
 .badge {
   display: inline-block;
@@ -169,6 +180,10 @@ tr.details td { padding: 4px 16px 14px 60px; background: color-mix(in srgb, var(
 .badge.hot { background: var(--hot); color: var(--surface); }
 .badge.soon { background: var(--soon); color: var(--surface); }
 .badge.warn { background: var(--warn-bg); color: var(--warn-text); }
+.badge.theme { background: var(--accent-soft); color: var(--accent); }
+.badge.kind { border: 1px solid var(--border); background: transparent; font-weight: 600; }
+.badge.kind.soon { border-color: var(--soon); background: transparent; color: var(--soon); }
+.badge.money { background: color-mix(in srgb, var(--up) 18%, transparent); color: var(--up); }
 .cell-charts { min-width: 140px; }
 .up { color: var(--up); }
 .down { color: var(--down); }
@@ -183,6 +198,22 @@ tr.details td { padding: 4px 16px 14px 60px; background: color-mix(in srgb, var(
 .score { display: flex; gap: 8px; align-items: center; justify-content: flex-end; }
 .score-bar { width: 56px; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
 .score-bar span { display: block; height: 100%; background: var(--accent); }
+
+/* Score breakdown and reviews inside a details row */
+.parts { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 4px 20px; margin: 8px 0; max-width: 780px; font-size: 0.82rem; }
+.part { display: grid; grid-template-columns: 1fr 56px 3.2em; gap: 8px; align-items: center; }
+h3 { margin: 12px 0 2px; font-size: 0.92rem; }
+.reviews { margin: 6px 0 0; padding: 0; max-width: 85ch; list-style: none; font-size: 0.86rem; }
+.reviews li { padding: 6px 0; border-top: 1px solid var(--border); overflow-wrap: anywhere; }
+.stars { color: #d99a00; letter-spacing: 1px; margin-right: 4px; white-space: nowrap; }
+.stars .muted { color: var(--border); }
+
+.fold { padding: 10px 16px; }
+.fold summary { cursor: pointer; font-weight: 600; font-size: 0.92rem; }
+.fold[open] summary { margin-bottom: 10px; }
+.table-wrap.plain { border: none; }
+.note-input { width: 100%; min-width: 180px; padding: 5px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text); font: inherit; font-size: 0.86rem; }
+.button.file { display: inline-flex; align-items: center; color: var(--text); }
 
 /* ---------- Phones: tables turn into cards ---------- */
 @media (max-width: 760px) {
@@ -233,4 +264,9 @@ tr.details td { padding: 4px 16px 14px 60px; background: color-mix(in srgb, var(
   .rtable tr.details td { flex-basis: 100%; padding: 0; }
   .shots img { height: 180px; }
   .rtable td.empty { flex-basis: 100%; }
+  .rtable td.cell-note { flex-basis: 100%; }
+  .rtable td.cell-remove { margin-left: auto; }
+  .note-input { min-width: 0; }
+  .parts { grid-template-columns: 1fr; }
+  .controls label.button.file { flex: 1 1 100%; flex-direction: row; justify-content: center; font-size: 0.9rem; }
 }

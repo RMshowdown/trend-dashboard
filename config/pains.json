@@ -1,0 +1,14 @@
+{
+  "pains": [
+    { "name": "Ads", "keywords": ["ads", "ad", "advert", "adverts", "advertisement", "advertisements", "โฆษณา"] },
+    { "name": "Price / subscription", "keywords": ["subscription", "subscribe", "expensive", "paywall", "premium", "charged", "refund", "เสียเงิน", "แพง", "จ่ายเงิน", "คืนเงิน", "หักเงิน", "เก็บเงิน"] },
+    { "name": "Crashes / bugs", "keywords": ["crash", "crashes", "crashing", "bug", "bugs", "freeze", "freezes", "error", "ค้าง", "เด้ง", "บัค", "บั๊ก", "หลุด", "เปิดไม่ได้", "ใช้ไม่ได้"] },
+    { "name": "Login / account", "keywords": ["login", "log in", "sign in", "account", "otp", "password", "verify", "verification", "เข้าไม่ได้", "ล็อกอิน", "ล็อคอิน", "ยืนยันตัวตน", "สมัครไม่ได้", "รหัสผ่าน"] },
+    { "name": "Slow", "keywords": ["slow", "lag", "laggy", "loading", "ช้า", "หน่วง", "โหลดนาน", "กระตุก", "อืด"] },
+    { "name": "Bad update", "keywords": ["update", "updated", "อัพเดท", "อัพเดต", "อัปเดต", "อัปเดท"] },
+    { "name": "Support", "keywords": ["support", "customer service", "no response", "ติดต่อไม่ได้", "ไม่ตอบ", "คอลเซ็นเตอร์"] },
+    { "name": "Hard to use", "keywords": ["confusing", "complicated", "hard to use", "ใช้ยาก", "ยุ่งยาก", "งง", "ซับซ้อน"] },
+    { "name": "Trust / scam", "keywords": ["scam", "fake", "fraud", "หลอก", "โกง", "มิจฉาชีพ"] },
+    { "name": "Thai language", "keywords": ["thai", "ภาษาไทย"] }
+  ]
+}

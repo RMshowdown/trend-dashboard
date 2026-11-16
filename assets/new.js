@@ -1,7 +1,7 @@
 const $ = id => document.getElementById(id);
 const controls = {
-  status: $("state"), genre: $("genre"), days: $("days"),
-  sort: $("sort"), q: $("search"), quiet: $("quiet")
+  status: $("state"), genre: $("genre"), theme: $("theme"), days: $("days"),
+  sort: $("sort"), q: $("search"), quiet: $("quiet"), small: $("small")
 };
 const tbody = $("apps");
 const status = $("status");
@@ -12,6 +12,9 @@ let updatedAt = "";
 let genreNames = {};
 let defaults = {};
 let lastRows = [];
+let devApps = {};  // developer id -> number of apps in the store (data/developers.json)
+
+const devCount = a => (devApps[a.artist_id] || {}).apps ?? null;
 
 const CHART_SHORT = { topfree: "Free", toppaid: "Paid", topgrossing: "Grossing" };
 
@@ -92,7 +95,9 @@ function detailsRow(a) {
     a.upcoming ? `Expected ${fmtDate(a.release_date, true)}` : `Released ${fmtDate(a.release_date, true)}`,
     `Price: ${a.price || "-"}`,
     `First tracked ${fmtDate(a.first_seen, true)}`,
-    a.in_new_feed ? "In Apple's new apps list" : null
+    a.in_new_feed ? "In Apple's new apps list" : null,
+    a.chart_days ? `${a.chart_days} day${a.chart_days === 1 ? "" : "s"} on a chart` : null,
+    devCount(a) != null ? `Developer has ${devCount(a)} app${devCount(a) === 1 ? "" : "s"}` : null
   ].filter(Boolean).map(esc).join(" · ");
   return `
     <tr class="details" hidden>
@@ -110,7 +115,12 @@ function baseFilter() {
   const maxDays = Number(controls.days.value);
   const q = controls.q.value.trim().toLowerCase();
   const showQuiet = controls.quiet.checked;
+  const theme = controls.theme.value;
+  const smallOnly = controls.small.checked;
   return apps.filter(a => {
+    if (theme !== "all" && !(a.themes || []).includes(theme)) return false;
+    // Developers we have not counted yet are left out, so the filter never shows a big studio by mistake
+    if (smallOnly && !(devCount(a) != null && devCount(a) <= 5)) return false;
     if (state === "released" && a.upcoming) return false;
     if (state === "upcoming" && !a.upcoming) return false;
     if (!a.upcoming && a.days_since_release > maxDays) return false;
@@ -148,7 +158,7 @@ function render() {
     <tr class="${a.upcoming ? "is-upcoming" : ""}">
       <td class="num muted cell-rank">${i + 1}</td>
       <td class="cell-app">${appCell(a, { details: true })}</td>
-      <td data-label="Category">${esc(a.genre)}</td>
+      <td data-label="Category">${esc(a.genre)}<div>${themeBadges(a.themes)}</div></td>
       <td class="num" data-label="Age">${ageCell(a)}</td>
       <td class="num" data-label="Reviews">${reviewsCell(a)}</td>
       <td class="num" data-label="Growth">${growthCell(a)}</td>
@@ -172,6 +182,8 @@ const csvColumns = [
   { label: "Name", value: a => a.name },
   { label: "Developer", value: a => a.developer },
   { label: "Category", value: a => a.genre },
+  { label: "Themes", value: a => (a.themes || []).join("; ") },
+  { label: "Developer apps", value: a => devCount(a) },
   { label: "Status", value: a => a.upcoming ? "upcoming" : "released" },
   { label: "Release date", value: a => a.release_date.slice(0, 10) },
   { label: "Price", value: a => a.price },
@@ -184,9 +196,11 @@ const csvColumns = [
   { label: "URL", value: a => a.url }
 ];
 
-loadJson("data/new_apps.json")
-  .then(data => {
+Promise.all([loadJson("data/new_apps.json"), loadJson("data/developers.json").catch(() => ({}))])
+  .then(([data, devs]) => {
     apps = data.apps;
+    devApps = devs.developers || {};
+    fillSelect(controls.theme, [...new Set(apps.flatMap(a => a.themes || []))].sort());
     updatedAt = data.updated_at;
     for (const g of data.genres || []) genreNames[g.key] = g.name;
 
@@ -206,7 +220,7 @@ loadJson("data/new_apps.json")
       if (controls.status.value !== "upcoming" && controls.sort.value === "soonest") controls.sort.value = "score";
       render();
     });
-    for (const el of [controls.genre, controls.days, controls.sort, controls.quiet]) {
+    for (const el of [controls.genre, controls.theme, controls.days, controls.sort, controls.quiet, controls.small]) {
       el.addEventListener("change", render);
     }
     controls.q.addEventListener("input", render);
