@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trend Dashboard</title>
+  <title>Google Trends</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <h1>Trend Dashboard</h1>
-  <nav>
-    <a href="index.html">Google Trends</a> |
-    <a href="apps.html">App Charts</a> |
-    <a href="new.html">แอปใหม่</a>
-  </nav>
-  <p id="status">กำลังโหลดข้อมูล...</p>
-  <div style="position: relative; height: 420px;">
-    <canvas id="chart"></canvas>
-  </div>
+  <header>
+    <h1>Google Trends · Thailand</h1>
+    <nav>
+      <a href="new.html">New Apps</a>
+      <a href="apps.html">Charts</a>
+      <a href="compare.html">Global</a>
+      <a href="index.html">Google Trends</a>
+    </nav>
+  </header>
+  <p id="status">Loading…</p>
+  <p class="note">
+    Values are a relative 0–100 interest index within each group only.
+    Keywords in different groups cannot be compared, because Google scales every group separately.
+  </p>
+  <div id="charts"></div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="assets/common.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>

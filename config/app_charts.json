@@ -1,17 +1,42 @@
 {
   "country": "th",
-  "chart": "topfreeapplications",
-  "new_chart": "newfreeapplications",
+  "site_url": "https://b1ackmonday.github.io/trend-dashboard",
   "limit": 100,
+  "charts": [
+    { "key": "topfree", "feed": "topfreeapplications", "name": "Top Free" },
+    { "key": "toppaid", "feed": "toppaidapplications", "name": "Top Paid" },
+    { "key": "topgrossing", "feed": "topgrossingapplications", "name": "Top Grossing" }
+  ],
+  "new_feeds": ["newfreeapplications", "newpaidapplications"],
   "new_limit": 100,
   "new_app_max_days": 60,
+  "quiet_track_days": 7,
+  "history_days": 30,
   "genres": [
-    { "name": "ทั้งหมด", "id": null },
-    { "name": "เกม", "id": 6014 },
-    { "name": "การเงิน", "id": 6015 },
-    { "name": "ยูทิลิตี้", "id": 6002 },
-    { "name": "ผลิตภาพ", "id": 6007 },
-    { "name": "โซเชียล", "id": 6005 },
-    { "name": "สุขภาพและฟิตเนส", "id": 6013 }
-  ]
+    { "name": "All", "id": null },
+    { "name": "Games", "id": 6014 },
+    { "name": "Finance", "id": 6015 },
+    { "name": "Utilities", "id": 6002 },
+    { "name": "Productivity", "id": 6007 },
+    { "name": "Social Networking", "id": 6005 },
+    { "name": "Health & Fitness", "id": 6013 },
+    { "name": "Education", "id": 6017 },
+    { "name": "Lifestyle", "id": 6012 },
+    { "name": "Photo & Video", "id": 6008 },
+    { "name": "Entertainment", "id": 6016 },
+    { "name": "Shopping", "id": 6024 }
+  ],
+  "compare": {
+    "charts": ["topfree", "topgrossing"],
+    "limit": 100,
+    "countries": [
+      { "code": "th", "name": "Thailand" },
+      { "code": "us", "name": "United States" },
+      { "code": "gb", "name": "United Kingdom" },
+      { "code": "jp", "name": "Japan" },
+      { "code": "kr", "name": "South Korea" },
+      { "code": "id", "name": "Indonesia" },
+      { "code": "vn", "name": "Vietnam" }
+    ]
+  }
 }

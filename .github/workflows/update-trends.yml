@@ -2,7 +2,7 @@ name: Update trends
 
 on:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "0 1 * * *"   # 08:00 Thailand time
   workflow_dispatch:
 
 permissions:
@@ -15,6 +15,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -31,14 +32,32 @@ jobs:
       - name: Fetch new apps
         run: python scripts/fetch_new_apps.py
 
+      # ข้อมูลต่างประเทศเป็นส่วนเสริม ถ้าล้มไม่ควรทำให้ข้อมูลไทยไม่ถูก commit
+      - name: Fetch global charts
+        id: global
+        continue-on-error: true
+        run: python scripts/fetch_global.py
+
+      # Google Trends ไม่มี API ทางการและมักตอบ 429 จึงไม่ให้ขั้นนี้ทำให้ทั้งงานล้ม
       - name: Fetch Google Trends
+        id: trends
+        continue-on-error: true
         run: python scripts/fetch_trends.py
 
+      - name: Warn about optional steps that failed
+        if: steps.global.outcome == 'failure' || steps.trends.outcome == 'failure'
+        run: |
+          [ "${{ steps.global.outcome }}" = "failure" ] && echo "::warning::Global charts fetch failed, global.json was not updated"
+          [ "${{ steps.trends.outcome }}" = "failure" ] && echo "::warning::Google Trends fetch failed, trends.json was not updated"
+          true
+
+      # commit ข้อมูลส่วนที่ดึงสำเร็จเสมอ แม้ขั้นก่อนหน้าบางขั้นจะล้ม
       - name: Commit and push updated data
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/trends.json data/apps.json data/new_apps.json
+          git add data/
           if git diff --staged --quiet; then
             echo "no changes"
             exit 0
@@ -54,3 +73,11 @@ jobs:
           done
           echo "push failed after 3 attempts"
           exit 1
+
+      # ส่งสรุปเข้า Discord ถ้าตั้ง secret DISCORD_WEBHOOK_URL ไว้ (ไม่ตั้งก็ข้ามไปเฉย ๆ)
+      - name: Send Discord report
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python scripts/notify_discord.py

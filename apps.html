@@ -1,32 +1,57 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App Charts</title>
+  <title>App Store Charts</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <h1>App Charts ประเทศไทย</h1>
-  <nav>
-    <a href="index.html">Google Trends</a> |
-    <a href="apps.html">App Charts</a> |
-    <a href="new.html">แอปใหม่</a>
-  </nav>
-  <p id="status">กำลังโหลดข้อมูล...</p>
-  <label for="genre">เลือกหมวด: </label>
-  <select id="genre"></select>
-  <table style="width: 100%; margin-top: 16px;">
-    <thead>
-      <tr>
-        <th style="text-align: left;">อันดับ</th>
-        <th style="text-align: left;">ชื่อแอป</th>
-        <th style="text-align: left;">ผู้พัฒนา</th>
-        <th style="text-align: left;">หมวด</th>
-      </tr>
-    </thead>
-    <tbody id="apps"></tbody>
-  </table>
+  <header>
+    <h1>App Store Charts · Thailand</h1>
+    <nav>
+      <a href="new.html">New Apps</a>
+      <a href="apps.html">Charts</a>
+      <a href="compare.html">Global</a>
+      <a href="index.html">Google Trends</a>
+    </nav>
+  </header>
+  <p id="status">Loading…</p>
+
+  <div class="controls">
+    <label>Chart
+      <select id="chart"></select>
+    </label>
+    <label>Category
+      <select id="genre"></select>
+    </label>
+    <label>Show
+      <select id="move">
+        <option value="all" selected>All</option>
+        <option value="up">Biggest climbers</option>
+        <option value="down">Biggest fallers</option>
+        <option value="new">New entries</option>
+      </select>
+    </label>
+    <input type="search" id="search" placeholder="Search app or developer" aria-label="Search">
+  </div>
+
+  <div class="table-wrap">
+    <table class="rtable">
+      <thead>
+        <tr>
+          <th class="num">Rank</th>
+          <th class="num">Change</th>
+          <th>App</th>
+          <th>Category</th>
+          <th class="num" id="trend-head">Rank trend</th>
+        </tr>
+      </thead>
+      <tbody id="apps"></tbody>
+    </table>
+  </div>
+
+  <script src="assets/common.js"></script>
   <script src="assets/apps.js"></script>
 </body>
 </html>
