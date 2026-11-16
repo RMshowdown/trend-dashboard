@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Comparison</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Global Comparison</h1>
+    <nav>
+      <a href="new.html">New Apps</a>
+      <a href="apps.html">Charts</a>
+      <a href="compare.html">Global</a>
+      <a href="index.html">Google Trends</a>
+    </nav>
+  </header>
+  <p id="status">Loading…</p>
+
+  <div class="controls">
+    <label>Chart
+      <select id="chart"></select>
+    </label>
+    <label>Show
+      <select id="show">
+        <option value="gap" selected>Hot abroad, not on Thai chart</option>
+        <option value="missing">Not available in Thailand</option>
+        <option value="everywhere">Charting in Thailand and abroad</option>
+        <option value="all">All apps</option>
+      </select>
+    </label>
+    <label>Min. countries
+      <select id="markets">
+        <option value="1">1+</option>
+        <option value="2" selected>2+</option>
+        <option value="3">3+</option>
+        <option value="4">4+</option>
+      </select>
+    </label>
+    <label>Max. age
+      <select id="age">
+        <option value="any" selected>Any</option>
+        <option value="90">90 days</option>
+        <option value="365">1 year</option>
+      </select>
+    </label>
+    <label>Category
+      <select id="genre"><option value="all">All</option></select>
+    </label>
+    <input type="search" id="search" placeholder="Search app, developer, description" aria-label="Search">
+    <button type="button" id="csv" class="button">Export CSV</button>
+  </div>
+
+  <p class="note">
+    Apps that rank in other countries' charts but not in Thailand can hint at ideas that have not reached the Thai market yet.
+    Numbers are chart positions (1 = top). “Countries” counts markets outside Thailand.
+    Some big apps (e.g. TikTok) use a separate listing per region, so “Not available” may mean a Thai version exists under another listing.
+  </p>
+
+  <div class="table-wrap">
+    <table class="rtable">
+      <thead id="head"></thead>
+      <tbody id="apps"></tbody>
+    </table>
+  </div>
+
+  <script src="assets/common.js"></script>
+  <script src="assets/compare.js"></script>
+</body>
+</html>
