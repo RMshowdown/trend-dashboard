@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Opportunities</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>App Opportunities</h1>
+    <nav>
+      <a href="new.html">New Apps</a>
+      <a href="opportunities.html">Opportunities</a>
+      <a href="apps.html">Charts</a>
+      <a href="play.html">Google Play</a>
+      <a href="compare.html">Global</a>
+      <a href="index.html">Google Trends</a>
+      <a href="watchlist.html">★ Watchlist</a>
+    </nav>
+  </header>
+  <p id="status">Loading…</p>
+
+  <div class="controls">
+    <label>Type
+      <select id="kind">
+        <option value="all" selected>All</option>
+        <option value="improve">Do it better (unhappy users)</option>
+        <option value="import">Bring it to Thailand</option>
+      </select>
+    </label>
+    <label>Category
+      <select id="genre"><option value="all">All</option></select>
+    </label>
+    <label>Theme
+      <select id="theme"><option value="all">All</option></select>
+    </label>
+    <label>Developer size
+      <select id="dev">
+        <option value="any" selected>Any</option>
+        <option value="5">Small (5 apps or fewer)</option>
+        <option value="2">Solo (1–2 apps)</option>
+      </select>
+    </label>
+    <input type="search" id="search" placeholder="Search name, developer, description" aria-label="Search">
+    <label class="check"><input type="checkbox" id="games" checked> Hide games</label>
+    <label class="check"><input type="checkbox" id="inst" checked> Hide bank, government and utility apps</label>
+    <button type="button" id="csv" class="button">Export CSV</button>
+  </div>
+
+  <p class="note">
+    A rule-based score (0–100) that points at demand nobody serves well yet. It does not predict success.
+    <b>Do it better</b>: apps on the Thai charts that users rate poorly.
+    <b>Bring it to Thailand</b>: apps charting in several countries that are not on the Thai charts.
+    Bank, government and utility apps are hidden by default because you cannot replace them, however unhappy their users are.
+    Low-star reviews come from Google Play and are picked by rules, not summarised by AI.
+  </p>
+
+  <details class="card fold">
+    <summary>Category overview: where users are least happy</summary>
+    <div class="table-wrap plain">
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th class="num">Charting apps</th>
+            <th class="num">Avg rating</th>
+            <th class="num">Rated under 3.5★</th>
+            <th class="num">Released in last 180 days</th>
+          </tr>
+        </thead>
+        <tbody id="genres"></tbody>
+      </table>
+    </div>
+    <p class="note">Many low-rated apps = unhappy users. Few recent releases = little new competition.</p>
+  </details>
+
+  <div class="table-wrap">
+    <table class="rtable">
+      <thead>
+        <tr>
+          <th class="num">#</th>
+          <th>App</th>
+          <th>Category</th>
+          <th>Why it stands out</th>
+          <th class="num">Rating</th>
+          <th class="num">Developer</th>
+          <th class="num">Score</th>
+        </tr>
+      </thead>
+      <tbody id="apps"></tbody>
+    </table>
+  </div>
+
+  <script src="assets/common.js"></script>
+  <script src="assets/opportunities.js"></script>
+</body>
+</html>

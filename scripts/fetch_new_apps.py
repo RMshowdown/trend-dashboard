@@ -10,8 +10,8 @@ import math
 import time
 from datetime import datetime, timedelta
 
-from common import (DATA, ROOT, fetch_chart, load_json, lookup, parse_date,
-                    short_text, utc_now, warn, write_json)
+from common import (DATA, ROOT, chart_presence, fetch_chart, load_json, load_themes, lookup,
+                    parse_date, short_text, tag_themes, utc_now, warn, write_json)
 
 CONFIG = ROOT / "config" / "app_charts.json"
 APPS = DATA / "apps.json"
@@ -107,6 +107,9 @@ def main():
     if not info:
         raise SystemExit("lookup returned nothing, keeping previous data")
 
+    themes = load_themes()
+    presence, _ = chart_presence(country)
+
     apps = []
     for app_id, base in candidates.items():
         r = info.get(app_id)
@@ -144,6 +147,10 @@ def main():
             "id": app_id,
             "name": (r.get("trackName") or base["name"]).strip(),
             "developer": r.get("artistName") or base["developer"],
+            "artist_id": str(r["artistId"]) if r.get("artistId") else None,
+            "themes": tag_themes(themes, r.get("trackName") or base["name"], r.get("description"),
+                                 game=(r.get("primaryGenreName") == "Games")),
+            "chart_days": presence.get(app_id, 0),
             "genre": r.get("primaryGenreName") or base["genre"],
             "url": r.get("trackViewUrl") or base["url"],
             "icon": r.get("artworkUrl100") or base.get("icon"),

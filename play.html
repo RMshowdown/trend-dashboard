@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Play Charts</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Google Play Charts</h1>
+    <nav>
+      <a href="new.html">New Apps</a>
+      <a href="opportunities.html">Opportunities</a>
+      <a href="apps.html">Charts</a>
+      <a href="play.html">Google Play</a>
+      <a href="compare.html">Global</a>
+      <a href="index.html">Google Trends</a>
+      <a href="watchlist.html">★ Watchlist</a>
+    </nav>
+  </header>
+  <p id="status">Loading…</p>
+
+  <div class="controls">
+    <label>Chart
+      <select id="chart"></select>
+    </label>
+    <label>Category
+      <select id="cat"></select>
+    </label>
+    <label>Show
+      <select id="show">
+        <option value="all" selected>All</option>
+        <option value="new90">Released in last 90 days</option>
+        <option value="noios">Not on the App Store charts</option>
+        <option value="up">Biggest climbers</option>
+        <option value="down">Biggest fallers</option>
+        <option value="entry">New entries</option>
+      </select>
+    </label>
+    <label>Sort by
+      <select id="sort">
+        <option value="rank" selected>Rank</option>
+        <option value="growth">Installs per day</option>
+        <option value="installs">Total installs</option>
+        <option value="newest">Newest release</option>
+        <option value="unhappy">Most 1–2★ ratings</option>
+      </select>
+    </label>
+    <input type="search" id="search" placeholder="Search app or developer" aria-label="Search">
+    <button type="button" id="csv" class="button">Export CSV</button>
+  </div>
+
+  <p class="note">
+    Thai Google Play charts. Unlike the App Store, Google Play shows install counts, so growth is measured directly
+    (installs per day appears from the second day of tracking).
+    Install counts are worldwide totals, not Thailand only, so for global apps the growth is global too.
+    “Not on the App Store charts” matches apps by name, so treat it as a hint.
+    Google has no official API for this data; if the page is stale, the daily read may have been blocked.
+  </p>
+
+  <div class="table-wrap">
+    <table class="rtable">
+      <thead>
+        <tr>
+          <th class="num">Rank</th>
+          <th class="num">Change</th>
+          <th>App</th>
+          <th>Category</th>
+          <th class="num">Installs</th>
+          <th class="num">Rating</th>
+          <th class="num">Released</th>
+          <th class="num" id="trend-head">Rank trend</th>
+        </tr>
+      </thead>
+      <tbody id="apps"></tbody>
+    </table>
+  </div>
+
+  <script src="assets/common.js"></script>
+  <script src="assets/play.js"></script>
+</body>
+</html>

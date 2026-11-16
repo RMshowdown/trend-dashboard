@@ -55,7 +55,51 @@ function showError(el, err) {
   el.classList.add("error");
 }
 
-function appCell(app, { details = false } = {}) {
+// ---------- Watchlist: saved in this browser only (localStorage) ----------
+const WATCH_KEY = "td-watchlist";
+const watchSeen = {};  // apps rendered on this page, so a click on a star knows what to save
+
+const watchlist = {
+  all() {
+    try { return JSON.parse(localStorage.getItem(WATCH_KEY)) || {}; } catch { return {}; }
+  },
+  save(items) {
+    try { localStorage.setItem(WATCH_KEY, JSON.stringify(items)); return true; } catch { return false; }
+  },
+  has(id) { return Boolean(this.all()[id]); },
+  toggle(id) {
+    const items = this.all();
+    if (items[id]) delete items[id];
+    else if (watchSeen[id]) items[id] = { ...watchSeen[id], added: new Date().toISOString().slice(0, 10), note: "" };
+    else return false;
+    this.save(items);
+    return Boolean(items[id]);
+  }
+};
+
+function starButton(app, store) {
+  const id = String(app.id);
+  watchSeen[id] = {
+    id, store, name: app.name, developer: app.developer, url: app.url, icon: app.icon, genre: app.genre || ""
+  };
+  const on = watchlist.has(id);
+  return `<button type="button" class="star${on ? " on" : ""}" data-watch="${esc(id)}" aria-pressed="${on}"
+    title="${on ? "Remove from watchlist" : "Save to watchlist"}">${on ? "★" : "☆"}</button>`;
+}
+
+document.addEventListener("click", e => {
+  const btn = e.target.closest("button[data-watch]");
+  if (!btn) return;
+  const on = watchlist.toggle(btn.dataset.watch);
+  btn.classList.toggle("on", on);
+  btn.setAttribute("aria-pressed", String(on));
+  btn.title = on ? "Remove from watchlist" : "Save to watchlist";
+  btn.textContent = on ? "★" : "☆";
+  document.dispatchEvent(new CustomEvent("watchlist-change"));
+});
+
+// store: "ios" (App Store) or "play" (Google Play). Pass star: false to leave the star out.
+function appCell(app, { details = false, store = "ios", star = true } = {}) {
   const icon = app.icon
     ? `<img class="icon" src="${safeUrl(app.icon)}" alt="" loading="lazy" width="40" height="40">`
     : `<span class="icon"></span>`;
@@ -70,7 +114,27 @@ function appCell(app, { details = false } = {}) {
         <small>${esc(app.developer)}</small>
       </div>
       ${more}
+      ${star ? starButton(app, store) : ""}
     </div>`;
+}
+
+function themeBadges(themes) {
+  return (themes || []).map(t => `<span class="badge theme">${esc(t)}</span>`).join(" ");
+}
+
+// 1234567 -> "1.2M" (install counts are too long to read otherwise)
+function fmtCompact(n) {
+  if (n == null) return "-";
+  return Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(n);
+}
+
+function fillSelect(select, values) {
+  for (const v of values) {
+    const opt = document.createElement("option");
+    opt.value = v.key ?? v;
+    opt.textContent = v.name ?? v;
+    select.appendChild(opt);
+  }
 }
 
 // Expand/collapse the details row that follows a row (event delegation on the tbody)

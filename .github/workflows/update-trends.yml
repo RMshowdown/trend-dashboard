@@ -15,7 +15,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -25,6 +25,17 @@ jobs:
           cache: pip
 
       - run: pip install -r requirements.txt
+
+      # Node ใช้อ่านข้อมูล Google Play (ชาร์ต จำนวนติดตั้ง รีวิว)
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install Node packages
+        id: npm
+        continue-on-error: true
+        run: npm ci --ignore-scripts
 
       - name: Fetch app charts
         run: python scripts/fetch_apps.py
@@ -38,6 +49,24 @@ jobs:
         continue-on-error: true
         run: python scripts/fetch_global.py
 
+      # Google Play ไม่มี API ทางการ อ่านจากหน้าเว็บ จึงอาจล้มได้ ไม่ให้กระทบข้อมูลส่วนอื่น
+      - name: Fetch Google Play charts
+        id: play
+        if: steps.npm.outcome == 'success'
+        continue-on-error: true
+        run: node scripts/fetch_play.mjs
+
+      - name: Score opportunities
+        id: opps
+        continue-on-error: true
+        run: python scripts/fetch_opportunities.py
+
+      - name: Fetch low-star reviews
+        id: reviews
+        if: steps.npm.outcome == 'success' && steps.opps.outcome == 'success'
+        continue-on-error: true
+        run: node scripts/fetch_reviews.mjs
+
       # Google Trends ไม่มี API ทางการและมักตอบ 429 จึงไม่ให้ขั้นนี้ทำให้ทั้งงานล้ม
       - name: Fetch Google Trends
         id: trends
@@ -45,8 +74,15 @@ jobs:
         run: python scripts/fetch_trends.py
 
       - name: Warn about optional steps that failed
-        if: steps.global.outcome == 'failure' || steps.trends.outcome == 'failure'
+        if: >-
+          steps.global.outcome == 'failure' || steps.trends.outcome == 'failure' ||
+          steps.npm.outcome == 'failure' || steps.play.outcome == 'failure' ||
+          steps.opps.outcome == 'failure' || steps.reviews.outcome == 'failure'
         run: |
+          [ "${{ steps.npm.outcome }}" = "failure" ] && echo "::warning::npm install failed, Google Play data and reviews were not updated"
+          [ "${{ steps.play.outcome }}" = "failure" ] && echo "::warning::Google Play fetch failed, play.json was not updated"
+          [ "${{ steps.opps.outcome }}" = "failure" ] && echo "::warning::Opportunity scoring failed, opportunities.json was not updated"
+          [ "${{ steps.reviews.outcome }}" = "failure" ] && echo "::warning::Review fetch failed, reviews were not updated"
           [ "${{ steps.global.outcome }}" = "failure" ] && echo "::warning::Global charts fetch failed, global.json was not updated"
           [ "${{ steps.trends.outcome }}" = "failure" ] && echo "::warning::Google Trends fetch failed, trends.json was not updated"
           true

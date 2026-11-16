@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watchlist</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Watchlist</h1>
+    <nav>
+      <a href="new.html">New Apps</a>
+      <a href="opportunities.html">Opportunities</a>
+      <a href="apps.html">Charts</a>
+      <a href="play.html">Google Play</a>
+      <a href="compare.html">Global</a>
+      <a href="index.html">Google Trends</a>
+      <a href="watchlist.html">★ Watchlist</a>
+    </nav>
+  </header>
+  <p id="status">Loading…</p>
+
+  <div class="controls">
+    <input type="search" id="search" placeholder="Search app, developer, note" aria-label="Search">
+    <button type="button" id="csv" class="button">Export CSV</button>
+    <button type="button" id="backup" class="button">Back up to file</button>
+    <label class="button file">Restore from file<input type="file" id="restore" accept="application/json,.json" hidden></label>
+  </div>
+
+  <p class="note">
+    Apps you starred (☆) on any page, with your notes. The list is stored in this browser only:
+    it does not sync to your other devices and is lost if you clear site data, so back it up to a file now and then.
+  </p>
+
+  <div class="table-wrap">
+    <table class="rtable">
+      <thead>
+        <tr>
+          <th>App</th>
+          <th>Store</th>
+          <th>Saved</th>
+          <th>Today</th>
+          <th>Note</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="apps"></tbody>
+    </table>
+  </div>
+
+  <script src="assets/common.js"></script>
+  <script src="assets/watchlist.js"></script>
+</body>
+</html>

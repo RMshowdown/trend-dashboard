@@ -62,15 +62,17 @@ async function render() {
   tbody.innerHTML = rows.map(({ app, change }) => {
     const series = positions.map(p => p[app.id] ?? null);
     const spark = sparkline(series, { invert: true, title: `Rank over ${dates.length} days` });
+    const stayed = series.filter(v => v != null).length;
     return `
       <tr>
         <td class="num cell-rank"><b>${app.rank}</b></td>
         <td class="num" data-label="Change">${changeCell(change)}</td>
         <td class="cell-app">${appCell(app)}</td>
         <td data-label="Category">${esc(app.genre)}</td>
+        <td class="num" data-label="Days on chart">${dates.length ? `${stayed}<small>of ${dates.length}</small>` : "-"}</td>
         <td class="num" data-label="Trend">${spark}</td>
       </tr>`;
-  }).join("") || `<tr><td colspan="5" class="empty">No apps match these filters</td></tr>`;
+  }).join("") || `<tr><td colspan="6" class="empty">No apps match these filters</td></tr>`;
 
   const vs = compared ? `vs ${fmtDate(compared)}` : "no earlier day to compare yet";
   setStatus(status, data.updated_at, `Showing ${rows.length} of ${all.length} apps · ${vs}`);

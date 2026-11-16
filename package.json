@@ -1,0 +1,13 @@
+{
+  "name": "trend-dashboard",
+  "private": true,
+  "type": "module",
+  "description": "Node scripts that read Google Play (charts, installs, reviews)",
+  "scripts": {
+    "play": "node scripts/fetch_play.mjs",
+    "reviews": "node scripts/fetch_reviews.mjs"
+  },
+  "dependencies": {
+    "google-play-scraper": "^10.0.0"
+  }
+}
