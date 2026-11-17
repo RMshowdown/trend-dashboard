@@ -343,8 +343,16 @@ def main():
     imports = [r for r in candidates if r["kind"] == "import"][:limit - len(improve)]
     result = sorted(improve + imports, key=lambda r: (-r["score"], r["name"]))
 
-    # ---------- รีวิวดาวต่ำของแอปที่คะแนนสูงสุด ----------
-    old = {a["id"]: a for a in (load_json(OUTPUT, {}) or {}).get("apps", [])}
+    # ---------- วันที่แอปเข้ามาอยู่ใน "Top" (มุมมองเริ่มต้นของหน้าเว็บ: ไม่รวมเกม และแอปธนาคาร/รัฐ) ----------
+    # Discord ใช้ค่านี้แจ้งเฉพาะแอปที่เพิ่งเข้ามาใหม่ ไม่ส่งรายชื่อเดิมซ้ำทุกวัน
+    old_data = load_json(OUTPUT, {}) or {}
+    old = {a["id"]: a for a in old_data.get("apps", [])}
+    top_n = settings.get("top_n", 20)
+    visible = [r for r in result if not r["institutional"] and r["genre"] != "Games"]
+    for rec in visible[:top_n]:
+        rec["top_since"] = old.get(rec["id"], {}).get("top_since") or today
+    # รอบแรกที่เริ่มติดตาม ทุกแอปจะดูเหมือนเพิ่งเข้ามา จึงจำวันเริ่มไว้ให้ Discord รู้
+    top_tracking_since = old_data.get("top_tracking_since") or today
     fetched = 0
     for rec in result[:settings["review_apps"]]:
         market = rec.get("review_country") or country
@@ -385,6 +393,8 @@ def main():
         "country": country,
         "tracked_days": tracked_days,
         "min_reviews": settings["min_reviews"],
+        "top_n": top_n,
+        "top_tracking_since": top_tracking_since,
         "genres": genres,
         "apps": result,
     }, indent=None)
