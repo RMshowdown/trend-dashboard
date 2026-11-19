@@ -1,6 +1,6 @@
 {
   "country": "th",
-  "site_url": "https://b1ackmonday.github.io/trend-dashboard",
+  "site_url": "https://rmshowdown.github.io/trend-dashboard",
   "limit": 100,
   "charts": [
     { "key": "topfree", "feed": "topfreeapplications", "name": "Top Free" },

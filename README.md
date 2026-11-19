@@ -2,12 +2,12 @@
 
 > ค้นหาไอเดียสร้างแอป จากแอปใหม่มาแรง แอปที่ผู้ใช้ยังไม่พอใจ แอปที่กำลังจะออก และแอปที่ดังในต่างประเทศ ทั้ง App Store และ Google Play อัปเดตทุกวันอัตโนมัติ
 
-[![Update data](https://github.com/B1ackmonday/trend-dashboard/actions/workflows/update-trends.yml/badge.svg)](https://github.com/B1ackmonday/trend-dashboard/actions/workflows/update-trends.yml)
+[![Update data](https://github.com/rmshowdown/trend-dashboard/actions/workflows/update-trends.yml/badge.svg)](https://github.com/rmshowdown/trend-dashboard/actions/workflows/update-trends.yml)
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
 ![Node](https://img.shields.io/badge/Node-22-5FA04E?logo=nodedotjs&logoColor=white)
 ![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-222?logo=github)
 
-🔗 **เปิดใช้งาน:** [New & Trending Apps](https://b1ackmonday.github.io/trend-dashboard/new.html)
+🔗 **เปิดใช้งาน:** [New & Trending Apps](https://rmshowdown.github.io/trend-dashboard/new.html)
 
 ---
 
@@ -165,7 +165,7 @@ trend-dashboard/
 ## 🛠️ รันบนเครื่อง
 
 ```bash
-git clone https://github.com/B1ackmonday/trend-dashboard.git
+git clone https://github.com/rmshowdown/trend-dashboard.git
 cd trend-dashboard
 python -m venv .venv
 .venv\Scripts\activate        # macOS/Linux: source .venv/bin/activate
